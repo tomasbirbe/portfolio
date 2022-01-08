@@ -1,0 +1,97 @@
+.container{
+  background-color: var(--raisin-black);
+  height:100vh;
+  width: 100%;
+  color:white;
+  display:flex;
+  flex-direction: column;
+  padding-block-start: 100px;
+  align-items: center;  
+  padding-inline: 2em;
+  gap: 2.5em;
+}
+
+.introContainer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap:1em;
+}
+
+.profilePic{
+  border-radius: 50%;
+  width: 180px;
+  height: 180px;
+}
+
+.title{
+  font-weight: var(--black);
+  font-size: var(--title);
+}
+
+.intro{
+  text-align: center;
+  font-weight: var(--light);
+  width: 250px;
+}
+
+.bold{
+  font-weight: var(--bold);
+}
+
+
+.menuButton{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  top: 25px;
+  left: 15px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  transition: all 200ms ease-in-out;
+}
+
+.menuButton:hover{
+  background-color: var(--independence);
+}
+
+.menu{
+  mask-position: center;
+  mask-size: cover;
+  mask-repeat: no-repeat;
+  width: 30px;
+  height: 30px;
+  mask-image: url('../../../public/icons/menu.svg');
+  background: var(--rhythm);
+}
+
+.downArrowLink{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  padding: 10px ;
+  bottom: 10px;
+  background-color: transparent;
+  transition: all 200ms ease-in-out;
+}
+
+.downArrowLink:hover{
+  background-color: var(--independence);
+}
+
+.downArrow{
+  mask-position: center;
+  mask-size: cover;
+  mask-repeat: no-repeat;
+  width: 30px;
+  height: 30px;
+  mask-image: url('../../../public/icons/down-arrow.svg');
+  background: var(--rhythm);
+}

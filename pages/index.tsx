@@ -1,7 +1,13 @@
+import styles from './styles/Home.module.css';
+
+import Intro from './components/Intro/Intro';
+import About from './components/About/About';
+
 export default function Home() {
   return (
-    <div>
-      <h1>Home</h1>
-    </div>
+    <main>
+      <Intro />
+      <About />
+    </main>
   );
 }
