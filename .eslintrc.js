@@ -3,16 +3,16 @@ module.exports = {
     browser: true,
     es2021: true,
   },
-  extends: ["plugin:prettier/recommended"],
-  parser: "@typescript-eslint/parser",
+  extends: ['plugin:prettier/recommended'],
+  parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaVersion: 13,
-    sourceType: "module",
+    sourceType: 'module',
   },
-  plugins: ["@typescript-eslint", "prettier"],
+  plugins: ['@typescript-eslint', 'prettier'],
   rules: {
-    "prettier/perttier": [
-      "error",
+    'prettier/prettier': [
+      'error',
       {
         tabWidth: 2,
         singleQuote: true,
