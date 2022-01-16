@@ -5,10 +5,11 @@
   color:white;
   display:flex;
   flex-direction: column;
-  padding-block-start: 100px;
+  padding-block-start: 4em;
   align-items: center;  
   padding-inline: 2em;
   gap: 2.5em;
+  position: relative;
 }
 
 .introContainer{
@@ -40,35 +41,6 @@
   font-weight: var(--bold);
 }
 
-
-.menuButton{
-  position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 10px;
-  top: 25px;
-  left: 15px;
-  border-radius: 50%;
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-  transition: all 200ms ease-in-out;
-}
-
-.menuButton:hover{
-  background-color: var(--independence);
-}
-
-.menu{
-  mask-position: center;
-  mask-size: cover;
-  mask-repeat: no-repeat;
-  width: 30px;
-  height: 30px;
-  mask-image: url('../../../public/icons/menu.svg');
-  background: var(--rhythm);
-}
 
 .downArrowLink{
   position: absolute;

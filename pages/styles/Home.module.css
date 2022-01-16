@@ -1,0 +1,37 @@
+.container{
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100vh;
+  position: relative;
+}
+
+.menuButton{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  top: 15px;
+  left: 15px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  transition: all 200ms ease-in-out;
+  z-index: 1;
+}
+
+.menuButton:hover{
+  background-color: var(--independence);
+}
+
+.menu{
+  mask-position: center;
+  mask-size: cover;
+  mask-repeat: no-repeat;
+  width: 30px;
+  height: 30px;
+  mask-image: url('../../public/icons/menu.svg');
+  background: var(--rhythm);
+}

@@ -1,4 +1,63 @@
 .container{
   height: 100vh;
-  width:100%;
+  width:100%; 
+  display:flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: var(--raisin-black);
+  color: white;
+  position: relative;
+  gap: 2.5em;
+  padding-block-start: 2em;
 }
+
+.title{
+  font-size: var(--title);
+  font-weight: var(--black);
+}
+
+.copy{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-inline: 30px;
+  gap: 1.8em;
+  text-align: center;
+}
+
+.techs{
+  font-weight: var(--bold);
+  text-decoration: none;
+  color: white;
+  border-block-end: 0px;
+  position: relative;
+}
+
+.techs:visited{
+  color: none;
+}
+
+.techs::after{
+  content: "";
+  visibility: hidden;
+  position: absolute;
+  bottom: -3px;
+  left: 0px;
+  width: 0px;
+  height: 3px;
+  transition: all 0.5s ease-in-out;
+}
+
+.techs:hover::after{
+  content: "";
+  visibility: visible;
+  background: white;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 90px;
+  height:3px;
+}
+

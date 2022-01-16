@@ -1,3 +1,4 @@
+import { DownArrow } from '../Icons';
 import styles from './Intro.module.css';
 
 export default function Intro() {
@@ -6,10 +7,7 @@ export default function Intro() {
   }
 
   return (
-    <section className={styles.container}>
-      <button type="button" className={styles.menuButton}>
-        <span className={styles.menu} />
-      </button>
+    <section className={styles.container} id="intro">
       <img
         src="profilepic.jpg"
         alt="A profile pic of me!"
@@ -26,9 +24,7 @@ export default function Intro() {
           mucho) y quien soy.
         </p>
       </article>
-      <a href="#about-me" className={styles.downArrowLink}>
-        <span className={styles.downArrow} />
-      </a>
+      <DownArrow href="#about-me" />
     </section>
   );
 }
