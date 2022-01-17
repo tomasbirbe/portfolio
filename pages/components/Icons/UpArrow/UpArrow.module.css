@@ -13,8 +13,8 @@
 }
 
 .arrow{
-  position: relative;
-  top: 2px;
   width: 25px;
   height: 25px;
+  position: relative;
+  bottom: 2px;
 }

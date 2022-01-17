@@ -1,5 +1,5 @@
-import { DownArrow } from '../Icons';
 import styles from './Intro.module.css';
+import { DownArrow } from '../Icons';
 
 export default function Intro() {
   function handleClick() {

@@ -1,10 +1,10 @@
-import { DownArrow } from '../Icons';
 import styles from './About.module.css';
+import { DownArrow } from '../Icons';
 
 export default function About() {
   return (
     <section className={styles.container} id="about-me">
-      <h1 className={styles.title}>Sobre mi</h1>
+      <h2 className={styles.title}>Sobre mi</h2>
       <article className={styles.copy}>
         <span>
           En 2018 empece a estudiar Ingenieria en Sistemas con mucho entusiasmo

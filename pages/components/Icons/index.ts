@@ -1,4 +1,4 @@
 import DownArrow from './DownArrow/DownArrow';
-import Ts from './Ts/Ts';
+import UpArrow from './UpArrow/UpArrow';
 
-export { DownArrow, Ts };
+export { DownArrow, UpArrow };

@@ -1,0 +1,104 @@
+.container{
+  height: 100vh;
+  width: 100%;
+  color: white;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding-block-start: 5em;
+  text-align: center;
+  gap: 3em;
+}
+
+.subtitle{
+  font-size: var(--subtitle);
+  font-weight: var(--medium);
+}
+
+.link{
+  text-decoration: none;
+  position: relative;
+  color: white;
+  padding: 0.5em;
+  transition: all 200ms ease-in-out;
+  border-radius: 5px;
+}
+
+.link:hover{
+  background-color: white;
+  color: black;
+}
+
+.about{
+  width: 240px;
+}
+
+.techs{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  gap: 1em;
+}
+
+.firstRow{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 1em;
+  padding-inline-start: 0.5em;
+}
+
+.secondRow{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 1em;
+}
+
+/* Icons */
+
+.chakra{
+  width: 35px ;
+  height: 35px ;
+}
+
+.react{
+  width: 40px ;
+  height: 40px ;
+}
+
+.github{
+  width: 40px ;
+  height: 40px ;
+}
+
+.html{
+  width: 40px ;
+  height: 40px ;
+}
+
+.css{
+  width: 40px ;
+  height: 40px ;
+}
+
+.ts{
+  width: 40px ;
+  height: 40px ;
+}
+
+.styledComponents{
+  width: 35px;
+  height: 35px;
+}
+
+.js{
+  width: 40px;
+  height: 40px;
+}
