@@ -1,4 +1,4 @@
-import styles from './styles/Home.module.css';
+import styles from './Home.module.css';
 
 import Intro from './components/Intro/Intro';
 import About from './components/About/About';
@@ -22,7 +22,41 @@ export default function Home() {
         <Calculator />
       </Projects>
       <Contact />
-      <div className=''></div>
+      {/* <div className={styles.drawer}>
+        <ul>
+          <li>
+            <a href="" className={styles.link}>
+              Introduccion
+            </a>
+          </li>
+          <li>
+            <a href="" className={styles.link}>
+              Sobre mi
+            </a>
+          </li>
+          <li>
+            <a href="" className={styles.link}>
+              Tecnologias
+            </a>
+          </li>
+          <li>
+            <a href="" className={styles.link}>
+              Proyectos
+            </a>
+            <ul>
+              <li>
+                <a href="">Twitter Clone</a>
+              </li>
+              <li>
+                <a href="">Calculadora</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="">Contacto</a>
+          </li>
+        </ul>
+      </div> */}
     </main>
   );
 }

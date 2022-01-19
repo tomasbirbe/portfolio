@@ -15,7 +15,7 @@ const Calculator = () => {
       </h2>
       <div className={general.about}>
         Este proyecto es una calculadora que puede guardar y mostrar valores
-        definidos por el usuario. Uno de los primero proyectos que me ayudo a
+        definidos por el usuario. Uno de los primeros proyectos que me ayudo a
         ganar experiencia con CSS Grid, React y LocalStorage.
       </div>
       <div className={general.techs}>
