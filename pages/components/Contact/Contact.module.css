@@ -18,7 +18,8 @@
 }
 
 .text{
-  width: 240px;
+  max-width: 500px;
+  padding-inline:2em;
   display: flex;
   flex-direction: column;
   justify-content: center;

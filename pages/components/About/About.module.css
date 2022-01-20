@@ -24,6 +24,7 @@
   flex-direction: column;
   padding-inline: 30px;
   gap: 1.8em;
+  max-width: 500px;
   text-align: center;
 }
 
