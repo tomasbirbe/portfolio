@@ -1,6 +1,5 @@
 .container{
   height: 100vh;
-  width: 100%;
   background-color: var(--raisin-black);
   position: relative;
   color: white;
@@ -14,15 +13,6 @@
 .title{
   font-weight: var(--black);
   font-size: var(--title);
-}
-
-.techs{
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  gap: 1.5em;
-  padding-block-start: 2em;
 }
 
 .figure{
@@ -73,6 +63,8 @@
   color:white;
   text-align: center;
   height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .figcaption::after{
@@ -111,67 +103,152 @@
   width: 100%;
 }
 
+.techs{
+  display: grid;
+  grid-template-columns: 1fr repeat(3, 90px) 1fr;
+  grid-template-rows: repeat(3, auto);
+  place-items: center;
+  width: fit-content;
+  padding-block-start: 2em;
+  row-gap: 1em;
+  column-gap: 0.5em;
+}
+
 .techs a{
   text-decoration: none;
 }
 
-.firstRow{
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 0.5em;
+.ts_link{
+  grid-column: 2;
 }
 
-.secondRow{
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 0.5em;
+.react_link{
+  grid-column: 3;
 }
 
-.thirdRow{
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 0.5em;
+.js_link{
+  grid-column: 4;
+}
+
+.html_link{
+  grid-column: 2 / 4;
+  grid-row: 2;
+}
+
+.css_link{
+  grid-column: 3 / 5;
+  grid-row: 2;
+}
+
+.chakra_link{
+  grid-column: 2 / 4;
+  grid-row: 3;
+}
+
+.styled_link{
+  grid-column: 3 / 5;
+  grid-row: 3;
 }
 
 /* Icons */
 
 .ts{
-  width: 50px;
-  height: 50px;
+  width: 45px;
+  height: 45px;
 }
 
 .react{
-  width: 50px;
-  height: 50px;
+  width: 45px;
+  height: 45px;
 }
 
 .js{
+  width: 45px;
+  height: 45px;
+}
+
+.html{
   width: 50px;
   height: 50px;
 }
 
-.html{
-  width: 55px;
-  height: 55px;
-}
-
 .css{
-  width: 55px;
-  height: 55px;
+  width: 50px;
+  height: 50px;
 }
 
 .chakra{
-  width: 45px;
-  height: 45px;
+  width: 40px;
+  height: 40px;
 }
 
 .styled{
-  width: 45px;
-  height: 45px;
+  width: 40px;
+  height: 40px;
 }
+
+
+@media screen and (min-width:768px){
+  .techs{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: space-between;
+    width: 600px;
+    height: fit-content;
+    gap: 1em;
+    padding-block-start: 6em;
+  }
+
+  .figcaption{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .figure{
+    width: 120px;
+    height: 112px;
+  }
+
+  .ts{
+    width: 50px;
+    height: 50px;
+  }
+  
+  .react{
+    width: 50px;
+    height: 50px;
+  }
+  
+  .js{
+    width: 50px;
+    height: 50px;
+  }
+  
+  .html{
+    width: 50px;
+    height: 50px;
+  }
+  
+  .css{
+    width: 50px;
+    height: 50px;
+  }
+  
+  .chakra{
+    width: 45px;
+    height: 45px;
+    margin-block-end: 0.5em;
+  }
+  
+  .styled{
+    width: 45px;
+    height: 45px;
+    margin-block-end: 0.5em;
+  }
+}
+
+

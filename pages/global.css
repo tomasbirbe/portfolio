@@ -17,6 +17,13 @@
   /* Font sizes */
   --title: 1.875em;
   --subtitle: 1.5em;
+
+  /* Media queries sizes */
+
+  --sm: 480px;
+  --md: 768px;
+  --lg: 1024px;
+  --xl: 1200px;
 }
 
 *, *::before, *::after {
