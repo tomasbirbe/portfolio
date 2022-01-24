@@ -1,15 +1,16 @@
 .container{
   background-color: var(--raisin-black);
-  height:100vh;
   width: 100%;
+  height: 100vh;
   color:white;
   display:flex;
   flex-direction: column;
-  padding-block-start: 4em;
   align-items: center;  
+  justify-content: center;
   padding-inline: 2em;
   gap: 2.5em;
   position: relative;
+  padding-block-end: 3em;
 }
 
 .introContainer{
@@ -18,6 +19,10 @@
   justify-content: center;
   align-items: center;
   gap:1em;
+}
+
+.icons{
+  display: none;
 }
 
 .profilePic{
@@ -66,4 +71,121 @@
   height: 30px;
   mask-image: url('../../../public/icons/down-arrow.svg');
   background: var(--rhythm);
+}
+
+
+@media screen and (min-width: 1024px) {
+  .container{
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    padding-block-start: 0;
+    padding-block-end: 5em;
+  }
+
+  .profilePic{
+    width: 300px;
+    height: 300px;
+  }
+
+  .introContainer{
+    width: 400px;
+  }
+
+  .intro{
+    width: 300px;
+  }
+
+  .icons{
+    padding-inline-start: 0.4em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+  }
+  
+  .icons > a {
+    position: relative;
+    padding: 0.5em;
+  }
+  
+  .icons > a::after{
+    content:"";
+    width: 2px;
+    height: 0%;
+    position: absolute;
+    background-color: white;
+    left: 0;
+    bottom: 0;
+    transition: all 300ms ease-in-out;
+  }
+  
+  .icons > a:hover::after{
+    height: 100%;
+  }
+  
+  .icons > a::before{
+    content:"";
+    width: 2px;
+    height: 0%;
+    position: absolute;
+    background-color: white;
+    right: 0;
+    top: 0;
+    transition: all 300ms ease-in-out;
+  }
+  
+  .icons > a:hover::before{
+    height: 100%;
+  }
+  
+  .icons span::after{
+    content:"";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: white;
+    left: 0;
+    top: 0;
+    transition-delay: 0.3s;
+    transition-duration: 300ms;
+    transition-property: all;
+    transition-timing-function: ease-in-out;
+  }
+  
+  .icons > a:hover span::after{
+    width: 100%;
+  }
+  
+  .icons span::before{
+    content:"";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: white;
+    right: 0;
+    bottom: 0;
+    transition-delay: 0.3s;
+    transition-duration: 300ms;
+    transition-property: all;
+    transition-timing-function: ease-in-out;
+  }
+  
+  .icons > a:hover span::before{
+    width: 100%;
+  }
+  
+  .email{
+    width: 40px;
+    height: 40px;
+  }
+  
+  .linkedin{
+    width: 40px;
+    height: 40px;
+  }
+  
+  .github{
+    width: 45px;
+    height: 45px;
+  }
 }
