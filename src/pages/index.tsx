@@ -1,15 +1,16 @@
 import { useEffect, useState } from 'react';
+import Head from 'next/head';
 import styles from './Home.module.css';
 
-import Intro from '../../src/components/Intro/Intro';
-import About from '../../src/components/About/About';
-import Techs from '../../src/components/Techs/Techs';
-import Projects from '../../src/components/Projects/Projects';
-import TwitterClone from '../../src/components/Projects/TwitterClone/TwitterClone';
-import Calculator from '../../src/components/Projects/Calculator/Calculator';
-import Contact from '../../src/components/Contact/Contact';
-import Drawer from '../../src/components/General/Drawer';
-import Nav from '../../src/components/General/Nav';
+import Intro from 'components/Intro/Intro';
+import About from 'components/About/About';
+import Techs from 'components/Techs/Techs';
+import Projects from 'components/Projects/Projects';
+import TwitterClone from 'components/Projects/TwitterClone/TwitterClone';
+import Calculator from 'components/Projects/Calculator/Calculator';
+import Contact from 'components/Contact/Contact';
+import Drawer from 'components/General/Drawer';
+import Nav from 'components/General/Nav';
 import useToggle from 'hooks/useToggle';
 
 export default function Home() {
@@ -22,6 +23,17 @@ export default function Home() {
 
   return (
     <main className={styles.container}>
+      <Head>
+        <title>Portafolio: Tomas Birbe</title>
+        <meta property="description">
+          Mi nombre es Tomas Birbe. Espero mostrarte quien soy y que hago con
+          este portfolio para que puedas conocer a tu proximo compañero de
+          trabajo!
+        </meta>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta charSet="UTF-8" />
+      </Head>
+
       <Nav />
       <Intro />
       <About />

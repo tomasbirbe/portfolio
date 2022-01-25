@@ -10,7 +10,7 @@
   padding-inline: 2em;
   gap: 2.5em;
   position: relative;
-  padding-block-end: 3em;
+  padding-block: 3em;
 }
 
 .introContainer{
@@ -78,8 +78,7 @@
   .container{
     flex-direction: row-reverse;
     justify-content: space-around;
-    padding-block-start: 0;
-    padding-block-end: 5em;
+    padding-block: 5em;
   }
 
   .profilePic{

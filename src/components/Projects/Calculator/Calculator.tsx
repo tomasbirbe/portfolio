@@ -28,17 +28,41 @@ const Calculator = () => {
                 src="icons/styled-components.svg"
                 alt=""
               />
-              <img className={general.react} src="icons/react.svg" alt="" />
-              <img className={general.github} src="icons/github.svg" alt="" />
+              <img
+                className={general.react}
+                src="icons/react.svg"
+                alt="An icon of React"
+              />
+              <img
+                className={general.github}
+                src="icons/github.svg"
+                alt="An icon of GitHub"
+              />
             </div>
             <div className={general.secondRow}>
-              <img className={general.css} src="icons/css.svg" alt="" />
-              <img className={general.html} src="icons/html.svg" alt="" />
-              <img className={general.js} src="icons/js.svg" alt="" />
+              <img
+                className={general.css}
+                src="icons/css.svg"
+                alt="An icon of CSS"
+              />
+              <img
+                className={general.html}
+                src="icons/html.svg"
+                alt="An icon of HTML"
+              />
+              <img
+                className={general.js}
+                src="icons/js.svg"
+                alt="An icon of Js"
+              />
             </div>
           </div>
         </div>
-        <img src="calculadora.jpg" alt="" className={general.img} />
+        <img
+          src="calculadora.jpg"
+          alt="An image preview of Calculator App"
+          className={general.img}
+        />
       </article>
       <DownArrow href="#contact" />
     </section>

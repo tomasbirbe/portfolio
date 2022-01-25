@@ -34,7 +34,11 @@ const TwitterClone = () => {
             </div>
           </div>
         </div>
-        <img src="twitter-clone.jpg" alt="" className={general.img} />
+        <img
+          src="twitter-clone.jpg"
+          alt="An image preview of Twitter clone"
+          className={general.img}
+        />
       </article>
       <DownArrow href="#calculator" />
     </section>
