@@ -25,11 +25,12 @@ export default function Home() {
     <main className={styles.container}>
       <Head>
         <title>Portafolio: Tomas Birbe</title>
-        <meta property="description">
-          Mi nombre es Tomas Birbe. Espero mostrarte quien soy y que hago con
+        <meta
+          property="description"
+          content="          Mi nombre es Tomas Birbe. Espero mostrarte quien soy y que hago con
           este portfolio para que puedas conocer a tu proximo compañero de
-          trabajo!
-        </meta>
+          trabajo!"
+        />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta charSet="UTF-8" />
       </Head>
