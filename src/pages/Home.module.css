@@ -3,6 +3,7 @@
   scroll-snap-type: y mandatory;
   overflow-y: scroll;
   height: 100vh;
+  max-height: 100%;
   color: white;
 }
 
