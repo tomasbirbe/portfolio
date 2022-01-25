@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import styles from './Home.module.css';
 
 import Intro from '../../src/components/Intro/Intro';
@@ -14,6 +14,11 @@ import useToggle from 'hooks/useToggle';
 
 export default function Home() {
   const { onOpen, onClose, isOpen } = useToggle();
+
+  useEffect(() => {
+    const vh = window.innerHeight;
+    document.documentElement.style.setProperty('--height', vh + 'px');
+  }, []);
 
   return (
     <main className={styles.container}>
