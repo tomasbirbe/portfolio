@@ -25,7 +25,7 @@ const Drawer = ({ isOpen, onClose }: { isOpen: any; onClose: any }) => {
           </a>
         </li>
         <li onClick={onClose}>
-          <a href="" className={styles.link}>
+          <a href="#projects" className={styles.link}>
             Proyectos
           </a>
           <ul className={styles.links}>

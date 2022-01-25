@@ -111,7 +111,7 @@ const Techs = () => {
         </a>
         {/* </div> */}
       </article>
-      <DownArrow href="#twitter-clone" />
+      <DownArrow href="#projects" />
     </section>
   );
 };

@@ -22,7 +22,7 @@ const Nav = () => {
         </a>
       </li>
       <li>
-        <a className={styles.navlink} href="#">
+        <a className={styles.navlink} href="#projects">
           Proyectos
         </a>
         <div className={styles.container_subnav}>

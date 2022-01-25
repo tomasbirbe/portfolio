@@ -4,8 +4,8 @@ import styles from './TwitterClone.module.css';
 
 const TwitterClone = () => {
   return (
-    <article className={general.article} id="twitter-clone">
-      <div className={styles.container}>
+    <section className={general.container} id="twitter-clone">
+      <article className={styles.article}>
         <div className={general.project}>
           <h2 className={general.subtitle}>
             <a
@@ -35,9 +35,9 @@ const TwitterClone = () => {
           </div>
         </div>
         <img src="twitter-clone.jpg" alt="" className={general.img} />
-      </div>
+      </article>
       <DownArrow href="#calculator" />
-    </article>
+    </section>
   );
 };
 

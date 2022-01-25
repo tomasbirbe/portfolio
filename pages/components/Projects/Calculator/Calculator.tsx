@@ -4,8 +4,8 @@ import styles from './Calculator.module.css';
 
 const Calculator = () => {
   return (
-    <article id="calculator" className={general.article}>
-      <div className={styles.container}>
+    <section id="calculator" className={general.container}>
+      <article className={styles.article}>
         <div className={general.project}>
           <h2 className={general.subtitle}>
             <a
@@ -39,9 +39,9 @@ const Calculator = () => {
           </div>
         </div>
         <img src="calculadora.jpg" alt="" className={general.img} />
-      </div>
+      </article>
       <DownArrow href="#contact" />
-    </article>
+    </section>
   );
 };
 

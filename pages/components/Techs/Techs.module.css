@@ -27,80 +27,13 @@
   height: 100%;
 }
 
-.figure::after{
-  content:"";
-  width: 2px;
-  height: 0%;
-  position: absolute;
-  background-color: white;
-  left: 0;
-  bottom: 0;
-  transition: all 300ms ease-in-out;
-}
-
-
-.figure:hover::after{
-  visibility: visible;
-  height: 100%;
-}
-
-.figure::before{
-  content:"";
-  width: 2px;
-  height: 0;
-  position: absolute;
-  background-color: white;
-  right: 0;
-  top: 0;
-  transition: all 300ms ease-in-out;
-}
-
-.figure:hover::before{
-  height: 100%;
-}
-
+  
 .figcaption{
   color:white;
   text-align: center;
   height: 100%;
   display: flex;
   flex-direction: column;
-}
-
-.figcaption::after{
-  content:"";
-  width: 0;
-  height: 2px;
-  position: absolute;
-  background-color: white;
-  left: 0;
-  top: 0;
-  transition-delay: 0.3s;
-  transition-duration: 300ms;
-  transition-property: all;
-  transition-timing-function: ease-in-out;
-}
-
-.figure:hover .figcaption::after{
-  width: 100%;
-}
-
-.figcaption::before{
-  content:"";
-  width: 0;
-  height: 2px;
-  position: absolute;
-  background-color: white;
-  right: 0;
-  bottom: 0;
-  transition-delay: 0.3s;
-  transition-duration: 300ms;
-  transition-property: all;
-  transition-timing-function: ease-in-out;
-}
-
-.figure:hover .figcaption::before{
-  width: 100%;
 }
 
 .techs{
@@ -258,3 +191,72 @@
 }
 
 
+@media screen and (min-width:1024px) {
+  .figure::after{
+    content:"";
+    width: 2px;
+    height: 0%;
+    position: absolute;
+    background-color: white;
+    left: 0;
+    bottom: 0;
+    transition: all 300ms ease-in-out;
+  }
+  
+  
+  .figure:hover::after{
+    visibility: visible;
+    height: 100%;
+  }
+  
+  .figure::before{
+    content:"";
+    width: 2px;
+    height: 0;
+    position: absolute;
+    background-color: white;
+    right: 0;
+    top: 0;
+    transition: all 300ms ease-in-out;
+  }
+  
+  .figure:hover::before{
+    height: 100%;
+  }
+  
+  .figcaption::after{
+    content:"";
+    width: 0;
+    height: 2px;
+    position: absolute;
+    background-color: white;
+    left: 0;
+    top: 0;
+    transition-delay: 0.3s;
+    transition-duration: 300ms;
+    transition-property: all;
+    transition-timing-function: ease-in-out;
+  }
+  
+  .figure:hover .figcaption::after{
+    width: 100%;
+  }
+  
+  .figcaption::before{
+    content:"";
+    width: 0;
+    height: 2px;
+    position: absolute;
+    background-color: white;
+    right: 0;
+    bottom: 0;
+    transition-delay: 0.3s;
+    transition-duration: 300ms;
+    transition-property: all;
+    transition-timing-function: ease-in-out;
+  }
+  
+  .figure:hover .figcaption::before{
+    width: 100%;
+  }
+}

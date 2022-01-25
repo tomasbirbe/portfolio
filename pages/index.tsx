@@ -21,10 +21,9 @@ export default function Home() {
       <Intro />
       <About />
       <Techs />
-      <Projects>
-        <TwitterClone />
-        <Calculator />
-      </Projects>
+      <Projects />
+      <TwitterClone />
+      <Calculator />
       <Contact />
       <Drawer isOpen={isOpen} onClose={onClose} />
       <button type="button" className={styles.menuButton} onClick={onOpen}>

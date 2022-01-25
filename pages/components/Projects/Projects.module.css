@@ -1,10 +1,70 @@
 .container{
-  position: relative;
-  display: flex;
+  height: 100vh;
+  width:100%; 
+  display:flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: fit-content;
-  width: 100%;
   background-color: var(--raisin-black);
+  color: white;
+  position: relative;
+  gap: 2.5em;
+  padding-block-end: 5em;
+}
+
+.title{
+  font-size: var(--title);
+  font-weight: var(--black);
+}
+
+.copy{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-inline: 30px;
+  gap: 1.8em;
+  max-width: 500px;
+  text-align: center;
+}
+
+.techs{
+  font-weight: var(--bold);
+  text-decoration: none;
+  color: white;
+  border-block-end: 0px;
+  position: relative;
+}
+
+.techs:visited{
+  color: none;
+}
+
+.techs::after{
+  content: "";
+  position: absolute;
+  background: white;
+  bottom: -3px;
+  left: 0px;
+  width: 0px;
+  height: 3px;
+  transition: all 0.5s ease-in-out;
+}
+
+.techs:hover::after{
+  width: 90px;
+}
+
+@media screen and (min-width:768px){
+  .container{
+    justify-content: center;
+    padding-block-end: 7em;
+  }
+}
+
+@media screen and (min-width:1024px){
+  .container{
+    padding: 0;
+    justify-content: center;
+  }
 }
