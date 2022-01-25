@@ -5,7 +5,7 @@
   align-items: center;
   position: relative;
   background-color: var(--raisin-black);
-  height: 100vh;
+  height: 100%;
   width: 100%;
   color: white;
   padding-block-end: 5em;
