@@ -10,7 +10,7 @@
   padding-inline: 2em;
   gap: 2.5em;
   position: relative;
-  padding-block: 3em;
+  padding-block-end: 3em;
 }
 
 .introContainer{
