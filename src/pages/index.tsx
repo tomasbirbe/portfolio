@@ -33,24 +33,25 @@ export default function Home() {
         />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta charSet="UTF-8" />
-        <link rel="preload" href="https://www.typescriptlang.org/" />
-        <link rel="preload" href="https://reactjs.org/" />
+        <link rel="preconnect" href="https://www.typescriptlang.org/" />
+        <link rel="preconnect" href="https://reactjs.org/" />
         <link
-          rel="preload"
+          rel="preconnect"
           href="https://developer.mozilla.org/en-US/docs/Web/javascript"
         />
         <link
-          rel="preload"
+          rel="preconnect"
           href="https://developer.mozilla.org/en-US/docs/Web/HTML"
         />
         <link
-          rel="preload"
+          rel="preconnect"
           href="https://developer.mozilla.org/en-US/docs/Web/CSS"
         />
-        <link rel="preload" href="https://chakra-ui.com/" />
-        <link rel="preload" href="https://styled-components.com/" />
-        <link rel="stylesheet" href="https://tb-calculator.vercel.app/" />
-        <link rel="stylesheet" href="https://tb-twitter.vercel.app/" />
+        <link rel="preconnect" href="https://chakra-ui.com/" />
+        <link rel="preconnect" href="https://styled-components.com/" />
+        <link rel="preconnect" href="https://tb-calculator.vercel.app/" />
+        <link rel="preconnect" href="https://tb-twitter.vercel.app/" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
       </Head>
 
       <Nav />
