@@ -8,7 +8,6 @@ export default function Intro() {
 
   return (
     <section className={styles.container} id="intro">
-      {/* <article className={styles.article}> */}
       <img
         src="profilepic.webp"
         alt="A profile pic of me!"
@@ -68,7 +67,6 @@ export default function Intro() {
           </a>
         </div>
       </div>
-      {/* </article> */}
       <DownArrow href="#about-me" />
     </section>
   );
