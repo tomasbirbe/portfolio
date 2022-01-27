@@ -43,6 +43,7 @@
     visibility: hidden;
     display: flex;
     justify-content: center;
+    align-items: center;
     width: 87px;
     height: 170px;
     position: absolute;
@@ -54,13 +55,15 @@
   }
   
   .subnav{
-    width: 150px;
+    width: 180px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    gap: 0.5em;
     align-items: center;
     position: absolute;
     top: 60px;
+    left: -50%;
     visibility: hidden;
     opacity: 0;
     padding-block: 1em;
