@@ -23,21 +23,52 @@ const TwitterClone = () => {
           </div>
           <div className={general.techs}>
             <div className={general.firstRow}>
-              <img className={general.chakra} src="icons/chakra.svg" alt="" />
-              <img className={general.react} src="icons/react.svg" alt="" />
-              <img className={general.github} src="icons/github.svg" alt="" />
+              <img
+                className={general.chakra}
+                src="icons/chakra.svg"
+                alt="A ChakraUI icon"
+                loading="lazy"
+              />
+              <img
+                className={general.react}
+                src="icons/react.svg"
+                alt="A React icon"
+                loading="lazy"
+              />
+              <img
+                className={general.github}
+                src="icons/github.svg"
+                alt="A GitHub icon"
+                loading="lazy"
+              />
             </div>
             <div className={general.secondRow}>
-              <img className={general.css} src="icons/css.svg" alt="" />
-              <img className={general.html} src="icons/html.svg" alt="" />
-              <img className={general.ts} src="icons/ts.svg" alt="" />
+              <img
+                className={general.css}
+                src="icons/css.svg"
+                alt="A CSS icon"
+                loading="lazy"
+              />
+              <img
+                className={general.html}
+                src="icons/html.svg"
+                alt="An HTML icon"
+                loading="lazy"
+              />
+              <img
+                className={general.ts}
+                src="icons/ts.svg"
+                alt="A TypeScript icon"
+                loading="lazy"
+              />
             </div>
           </div>
         </div>
         <img
-          src="twitter-clone.jpg"
+          src="twitter-clone.webp"
           alt="An image preview of Twitter clone"
           className={general.img}
+          loading="lazy"
         />
       </article>
       <DownArrow href="#calculator" />

@@ -26,8 +26,8 @@ export default function Home() {
       <Head>
         <title>Portafolio: Tomas Birbe</title>
         <meta
-          property="description"
-          content="          Mi nombre es Tomas Birbe. Espero mostrarte quien soy y que hago con
+          name="description"
+          content="Mi nombre es Tomas Birbe. Espero mostrarte quien soy y que hago con
           este portfolio para que puedas conocer a tu proximo compañero de
           trabajo!"
         />

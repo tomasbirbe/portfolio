@@ -27,16 +27,19 @@ const Calculator = () => {
                 className={general.styledComponents}
                 src="icons/styled-components.svg"
                 alt=""
+                loading="lazy"
               />
               <img
                 className={general.react}
                 src="icons/react.svg"
                 alt="An icon of React"
+                loading="lazy"
               />
               <img
                 className={general.github}
                 src="icons/github.svg"
                 alt="An icon of GitHub"
+                loading="lazy"
               />
             </div>
             <div className={general.secondRow}>
@@ -44,24 +47,28 @@ const Calculator = () => {
                 className={general.css}
                 src="icons/css.svg"
                 alt="An icon of CSS"
+                loading="lazy"
               />
               <img
                 className={general.html}
                 src="icons/html.svg"
                 alt="An icon of HTML"
+                loading="lazy"
               />
               <img
                 className={general.js}
                 src="icons/js.svg"
                 alt="An icon of Js"
+                loading="lazy"
               />
             </div>
           </div>
         </div>
         <img
-          src="calculadora.jpg"
+          src="calculadora.webp"
           alt="An image preview of Calculator App"
           className={general.img}
+          loading="lazy"
         />
       </article>
       <DownArrow href="#contact" />

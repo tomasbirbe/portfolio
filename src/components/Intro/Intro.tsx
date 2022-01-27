@@ -10,7 +10,7 @@ export default function Intro() {
     <section className={styles.container} id="intro">
       {/* <article className={styles.article}> */}
       <img
-        src="profilepic.jpg"
+        src="profilepic.webp"
         alt="A profile pic of me!"
         className={styles.profilePic}
       />
@@ -26,19 +26,30 @@ export default function Intro() {
         </p>
         <div className={styles.icons}>
           <a href="mailto: tomas.birbe@gmail.com">
-            <img className={styles.email} src="icons/email.svg" alt="" />
+            <img
+              className={styles.email}
+              src="icons/email.svg"
+              alt="A letter icon"
+              loading="lazy"
+            />
             <span></span>
           </a>
           <a href="https://www.linkedin.com/in/tomas-birbe/" target="_blank">
             <img
               className={styles.linkedin}
               src="icons/white-linkedin.svg"
-              alt=""
+              alt="A LinkedIn Icon"
+              loading="lazy"
             />
             <span></span>
           </a>
           <a href="https://github.com/tomasbirbe" target="_blank">
-            <img className={styles.github} src="icons/github.svg" alt="" />
+            <img
+              className={styles.github}
+              src="icons/github.svg"
+              alt="A GitHub Icon"
+              loading="lazy"
+            />
             <span></span>
           </a>
         </div>

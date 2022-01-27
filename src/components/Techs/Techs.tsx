@@ -18,6 +18,7 @@ const Techs = () => {
               src="icons/ts.svg"
               alt="A TypeScript Icon"
               className={styles.ts}
+              loading="lazy"
             />
             <figcaption className={styles.figcaption}>TypeScript</figcaption>
           </figure>
@@ -32,6 +33,7 @@ const Techs = () => {
               src="icons/react.svg"
               alt="A React icon"
               className={styles.react}
+              loading="lazy"
             />
             <figcaption className={styles.figcaption}>React</figcaption>
           </figure>
@@ -46,6 +48,7 @@ const Techs = () => {
               src="icons/js.svg"
               alt="A JavaScript icon"
               className={styles.js}
+              loading="lazy"
             />
             <figcaption className={styles.figcaption}>JavaScript</figcaption>
           </figure>
@@ -62,6 +65,7 @@ const Techs = () => {
               src="icons/html.svg"
               alt="A HTML icon"
               className={styles.html}
+              loading="lazy"
             />
             <figcaption className={styles.figcaption}>HTML</figcaption>
           </figure>
@@ -76,6 +80,7 @@ const Techs = () => {
             <figcaption className={styles.figcaption}>CSS</figcaption>
           </figure>
         </a>
+        loading='lazy'
         {/* </div> */}
         {/* <div className={styles.thirdRow}> */}
         <a
@@ -88,6 +93,7 @@ const Techs = () => {
               src="icons/chakra.svg"
               alt="A ChakraUI icon"
               className={styles.chakra}
+              loading="lazy"
             />
             <figcaption className={styles.figcaption}>Chakra-UI</figcaption>
           </figure>
@@ -102,6 +108,7 @@ const Techs = () => {
               src="icons/styled-components.svg"
               alt="A Styled Components icon"
               className={styles.styled}
+              loading="lazy"
             />
             <figcaption className={styles.figcaption}>
               <span>Styled</span>
