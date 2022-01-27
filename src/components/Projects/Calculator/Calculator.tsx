@@ -10,8 +10,10 @@ const Calculator = () => {
           <h2 className={general.subtitle}>
             <a
               href="https://tb-calculator.vercel.app/"
+              rel="noreferrer noopener"
               target="_blank"
               className={general.link}
+              aria-label="Ir al proyecto Calculadora"
             >
               Calculadora
             </a>
@@ -26,19 +28,19 @@ const Calculator = () => {
               <img
                 className={general.styledComponents}
                 src="icons/styled-components.svg"
-                alt=""
+                alt="Logo de Styled Components"
                 loading="lazy"
               />
               <img
                 className={general.react}
                 src="icons/react.svg"
-                alt="An icon of React"
+                alt="Logo de React"
                 loading="lazy"
               />
               <img
                 className={general.github}
                 src="icons/github.svg"
-                alt="An icon of GitHub"
+                alt="Logo de GitHub"
                 loading="lazy"
               />
             </div>
@@ -46,19 +48,19 @@ const Calculator = () => {
               <img
                 className={general.css}
                 src="icons/css.svg"
-                alt="An icon of CSS"
+                alt="Logo de CSS"
                 loading="lazy"
               />
               <img
                 className={general.html}
                 src="icons/html.svg"
-                alt="An icon of HTML"
+                alt="Logo de HTML"
                 loading="lazy"
               />
               <img
                 className={general.js}
                 src="icons/js.svg"
-                alt="An icon of Js"
+                alt="Logo de JavaScript"
                 loading="lazy"
               />
             </div>

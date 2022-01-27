@@ -7,16 +7,17 @@ const Techs = () => {
     <section className={styles.container} id="techs">
       <h2 className={styles.title}>Tecnologias</h2>
       <article className={styles.techs}>
-        {/* <div className={styles.firstRow}> */}
         <a
           href="https://www.typescriptlang.org/"
           target="_blank"
+          rel="noreferrer noopener"
           className={styles.ts_link}
+          aria-label="Ir a la documentacion de TypeScript"
         >
           <figure className={styles.figure}>
             <img
               src="icons/ts.svg"
-              alt="A TypeScript Icon"
+              alt="Logo de TypeScript"
               className={styles.ts}
               loading="lazy"
             />
@@ -26,12 +27,14 @@ const Techs = () => {
         <a
           href="https://reactjs.org/"
           target="_blank"
+          rel="noreferrer noopener"
           className={styles.react_link}
+          aria-label="Ir a la documentacion de React"
         >
           <figure className={styles.figure}>
             <img
               src="icons/react.svg"
-              alt="A React icon"
+              alt="Logo de React"
               className={styles.react}
               loading="lazy"
             />
@@ -41,29 +44,31 @@ const Techs = () => {
         <a
           href="https://developer.mozilla.org/en-US/docs/Web/javascript"
           target="_blank"
+          rel="noreferrer noopener"
           className={styles.js_link}
+          aria-label="Ir a la documentacion de JavaScript"
         >
           <figure className={styles.figure}>
             <img
               src="icons/js.svg"
-              alt="A JavaScript icon"
+              alt="Logo de JavaScript"
               className={styles.js}
               loading="lazy"
             />
             <figcaption className={styles.figcaption}>JavaScript</figcaption>
           </figure>
         </a>
-        {/* </div> */}
-        {/* <div className={styles.secondRow}> */}
         <a
           href="https://developer.mozilla.org/en-US/docs/Web/HTML"
           target="_blank"
+          rel="noreferrer noopener"
           className={styles.html_link}
+          aria-label="Ir a la documentacion de HTML"
         >
           <figure className={styles.figure}>
             <img
               src="icons/html.svg"
-              alt="A HTML icon"
+              alt="Logo de HTML"
               className={styles.html}
               loading="lazy"
             />
@@ -73,25 +78,30 @@ const Techs = () => {
         <a
           href="https://developer.mozilla.org/en-US/docs/Web/CSS"
           target="_blank"
+          rel="noreferrer noopener"
           className={styles.css_link}
+          aria-label="Ir a la documentacion de CSS"
         >
           <figure className={styles.figure}>
-            <img src="icons/css.svg" alt="A CSS icon" className={styles.html} />
+            <img
+              src="icons/css.svg"
+              alt="Logo de CSS"
+              className={styles.html}
+            />
             <figcaption className={styles.figcaption}>CSS</figcaption>
           </figure>
         </a>
-        loading='lazy'
-        {/* </div> */}
-        {/* <div className={styles.thirdRow}> */}
         <a
           href="https://chakra-ui.com/"
           target="_blank"
+          rel="noreferrer noopener"
           className={styles.chakra_link}
+          aria-label="Ir a la documentacion de ChakraUI"
         >
           <figure className={styles.figure}>
             <img
               src="icons/chakra.svg"
-              alt="A ChakraUI icon"
+              alt="Logo de ChakraUI"
               className={styles.chakra}
               loading="lazy"
             />
@@ -101,12 +111,14 @@ const Techs = () => {
         <a
           href="https://styled-components.com/"
           target="_blank"
+          rel="noreferrer noopener"
           className={styles.styled_link}
+          aria-label="Ir a la documentacion de Styled Components"
         >
           <figure className={styles.figure}>
             <img
               src="icons/styled-components.svg"
-              alt="A Styled Components icon"
+              alt="Logo de Styled Components"
               className={styles.styled}
               loading="lazy"
             />
@@ -116,7 +128,6 @@ const Techs = () => {
             </figcaption>
           </figure>
         </a>
-        {/* </div> */}
       </article>
       <DownArrow href="#projects" />
     </section>

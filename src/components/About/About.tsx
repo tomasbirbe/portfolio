@@ -18,7 +18,11 @@ export default function About() {
         </span>
         <span>
           ¿Tecnologias? ¡Cierto las{' '}
-          <a className={styles.techs} href="#techs">
+          <a
+            className={styles.techs}
+            href="#techs"
+            aria-label="Ir a la pagina de Tecnologias"
+          >
             tecnologias!
           </a>
         </span>

@@ -25,7 +25,11 @@ export default function Intro() {
           mucho) y quien soy.
         </p>
         <div className={styles.icons}>
-          <a href="mailto: tomas.birbe@gmail.com">
+          <a
+            href="mailto: tomas.birbe@gmail.com"
+            aria-label="Enviar un correo a tomas.birbe@gmail.com"
+            rel="noreferrer noopener"
+          >
             <img
               className={styles.email}
               src="icons/email.svg"
@@ -34,7 +38,12 @@ export default function Intro() {
             />
             <span></span>
           </a>
-          <a href="https://www.linkedin.com/in/tomas-birbe/" target="_blank">
+          <a
+            href="https://www.linkedin.com/in/tomas-birbe/"
+            target="_blank"
+            rel="noreferrer noopener"
+            aria-label="Ir al perfil de LinkedIn de Tomas Birbe"
+          >
             <img
               className={styles.linkedin}
               src="icons/white-linkedin.svg"
@@ -43,7 +52,12 @@ export default function Intro() {
             />
             <span></span>
           </a>
-          <a href="https://github.com/tomasbirbe" target="_blank">
+          <a
+            href="https://github.com/tomasbirbe"
+            target="_blank"
+            rel="noreferrer noopener"
+            aria-label="Ir al perfil de GitHub de Tomas Birbe"
+          >
             <img
               className={styles.github}
               src="icons/github.svg"

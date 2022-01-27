@@ -33,6 +33,24 @@ export default function Home() {
         />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta charSet="UTF-8" />
+        <link rel="preload" href="https://www.typescriptlang.org/" />
+        <link rel="preload" href="https://reactjs.org/" />
+        <link
+          rel="preload"
+          href="https://developer.mozilla.org/en-US/docs/Web/javascript"
+        />
+        <link
+          rel="preload"
+          href="https://developer.mozilla.org/en-US/docs/Web/HTML"
+        />
+        <link
+          rel="preload"
+          href="https://developer.mozilla.org/en-US/docs/Web/CSS"
+        />
+        <link rel="preload" href="https://chakra-ui.com/" />
+        <link rel="preload" href="https://styled-components.com/" />
+        <link rel="stylesheet" href="https://tb-calculator.vercel.app/" />
+        <link rel="stylesheet" href="https://tb-twitter.vercel.app/" />
       </Head>
 
       <Nav />
@@ -44,7 +62,12 @@ export default function Home() {
       <Calculator />
       <Contact />
       <Drawer isOpen={isOpen} onClose={onClose} />
-      <button type="button" className={styles.menuButton} onClick={onOpen}>
+      <button
+        type="button"
+        className={styles.menuButton}
+        onClick={onOpen}
+        aria-label="Abrir el menu de navegacion"
+      >
         <span className={styles.menu} />
       </button>
     </main>

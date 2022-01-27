@@ -11,7 +11,9 @@ const TwitterClone = () => {
             <a
               href="https://tb-twitter.vercel.app/"
               target="_blank"
+              rel="noreferrer noopener"
               className={general.link}
+              aria-label="Ir al proyecto Twitter Clone"
             >
               Twitter Clone
             </a>
@@ -26,19 +28,19 @@ const TwitterClone = () => {
               <img
                 className={general.chakra}
                 src="icons/chakra.svg"
-                alt="A ChakraUI icon"
+                alt="Logo de ChakraUI"
                 loading="lazy"
               />
               <img
                 className={general.react}
                 src="icons/react.svg"
-                alt="A React icon"
+                alt="Logo de React"
                 loading="lazy"
               />
               <img
                 className={general.github}
                 src="icons/github.svg"
-                alt="A GitHub icon"
+                alt="Logo de GitHub"
                 loading="lazy"
               />
             </div>
@@ -46,7 +48,7 @@ const TwitterClone = () => {
               <img
                 className={general.css}
                 src="icons/css.svg"
-                alt="A CSS icon"
+                alt="Logo de CSS"
                 loading="lazy"
               />
               <img
@@ -58,7 +60,7 @@ const TwitterClone = () => {
               <img
                 className={general.ts}
                 src="icons/ts.svg"
-                alt="A TypeScript icon"
+                alt="Logo de TypeScript"
                 loading="lazy"
               />
             </div>
@@ -66,7 +68,7 @@ const TwitterClone = () => {
         </div>
         <img
           src="twitter-clone.webp"
-          alt="An image preview of Twitter clone"
+          alt="Vista previa sobre el proyecto Twitter Clone"
           className={general.img}
           loading="lazy"
         />
