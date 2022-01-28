@@ -3,15 +3,6 @@ import Head from 'next/head';
 import dynamic from 'next/dynamic';
 import styles from './Home.module.css';
 
-// import Intro from 'components/Intro/Intro';
-// import About from 'components/About/About';
-// import Techs from 'components/Techs/Techs';
-// import Projects from 'components/Projects/Projects';
-// import TwitterClone from 'components/Projects/TwitterClone/TwitterClone';
-// import Calculator from 'components/Projects/Calculator/Calculator';
-// import Contact from 'components/Contact/Contact';
-// import Drawer from 'components/General/Drawer';
-// import Nav from 'components/General/Nav';
 import useToggle from 'hooks/useToggle';
 
 const Intro = dynamic(() => import('components/Intro/Intro'));
@@ -27,7 +18,6 @@ const Calculator = dynamic(
 const Contact = dynamic(() => import('components/Contact/Contact'));
 const Drawer = dynamic(() => import('components/General/Drawer'));
 const Nav = dynamic(() => import('components/General/Nav'));
-// const useToggle = dynamic(() => import('hooks/useToggle'));
 
 export default function Home() {
   const { onOpen, onClose, isOpen } = useToggle();

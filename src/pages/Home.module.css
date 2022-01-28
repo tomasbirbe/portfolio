@@ -37,6 +37,10 @@
 }
 
 @media screen and (min-width: 1024px) {
+  .container{
+    height: 100vh;
+  }
+  
   .menuButton{
     display: none;
   }
