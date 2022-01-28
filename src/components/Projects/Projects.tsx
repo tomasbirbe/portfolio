@@ -13,7 +13,7 @@ function Projects() {
         </span>
         <span>
           Todos los proyectos que encuentres estan en produccion y podes acceder
-          a cada uno de ellos clickando en el titulo
+          a cada uno de ellos haciendo click en el titulo del proyecto
         </span>
         <span>¡Espero los disfrutes tanto como yo!</span>
       </article>
