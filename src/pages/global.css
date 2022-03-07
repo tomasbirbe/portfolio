@@ -6,6 +6,7 @@
 @layer base {
   html {
     @apply font-light;
+    @apply bg-raisin-black;
   } 
   h2 {
     @apply font-black text-3xl;

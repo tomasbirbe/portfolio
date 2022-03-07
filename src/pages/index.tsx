@@ -1,20 +1,16 @@
 import { useEffect, useState } from 'react';
 import Head from 'next/head';
 import dynamic from 'next/dynamic';
-import styles from './Home.module.css';
-
 import useToggle from 'hooks/useToggle';
+
+import styles from './Home.module.css';
 
 const Intro = dynamic(() => import('components/Intro/Intro'));
 const About = dynamic(() => import('components/About/About'));
 const Techs = dynamic(() => import('components/Techs/Techs'));
 const Projects = dynamic(() => import('components/Projects/Projects'));
-const TwitterClone = dynamic(
-  () => import('components/Projects/TwitterClone/TwitterClone')
-);
-const Calculator = dynamic(
-  () => import('components/Projects/Calculator/Calculator')
-);
+const TwitterClone = dynamic(() => import('components/Projects/TwitterClone/TwitterClone'));
+const Calculator = dynamic(() => import('components/Projects/Calculator/Calculator'));
 const Contact = dynamic(() => import('components/Contact/Contact'));
 const Drawer = dynamic(() => import('components/General/Drawer'));
 const Nav = dynamic(() => import('components/General/Nav'));
@@ -24,6 +20,7 @@ export default function Home() {
 
   useEffect(() => {
     const vh = window.innerHeight;
+
     document.documentElement.style.setProperty('--height', vh + 'px');
   }, []);
 
@@ -32,32 +29,23 @@ export default function Home() {
       <Head>
         <title>Portafolio: Tomas Birbe</title>
         <meta
-          name="description"
           content="Mi nombre es Tomas Birbe. Espero mostrarte quien soy y que hago con
           este portfolio para que puedas conocer a tu proximo compañero de
           trabajo!"
+          name="description"
         />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
         <meta charSet="UTF-8" />
-        <link rel="preconnect" href="https://www.typescriptlang.org/" />
-        <link rel="preconnect" href="https://reactjs.org/" />
-        <link
-          rel="preconnect"
-          href="https://developer.mozilla.org/en-US/docs/Web/javascript"
-        />
-        <link
-          rel="preconnect"
-          href="https://developer.mozilla.org/en-US/docs/Web/HTML"
-        />
-        <link
-          rel="preconnect"
-          href="https://developer.mozilla.org/en-US/docs/Web/CSS"
-        />
-        <link rel="preconnect" href="https://chakra-ui.com/" />
-        <link rel="preconnect" href="https://styled-components.com/" />
-        <link rel="preconnect" href="https://tb-calculator.vercel.app/" />
-        <link rel="preconnect" href="https://tb-twitter.vercel.app/" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link href="https://www.typescriptlang.org/" rel="preconnect" />
+        <link href="https://reactjs.org/" rel="preconnect" />
+        <link href="https://developer.mozilla.org/en-US/docs/Web/javascript" rel="preconnect" />
+        <link href="https://developer.mozilla.org/en-US/docs/Web/HTML" rel="preconnect" />
+        <link href="https://developer.mozilla.org/en-US/docs/Web/CSS" rel="preconnect" />
+        <link href="https://chakra-ui.com/" rel="preconnect" />
+        <link href="https://styled-components.com/" rel="preconnect" />
+        <link href="https://tb-calculator.vercel.app/" rel="preconnect" />
+        <link href="https://tb-twitter.vercel.app/" rel="preconnect" />
+        <link href="https://fonts.gstatic.com" rel="preconnect" />
       </Head>
       <main className={`${styles.container}`}>
         <Nav />
@@ -70,10 +58,10 @@ export default function Home() {
         <Contact />
         <Drawer isOpen={isOpen} onClose={onClose} />
         <button
-          type="button"
-          className={styles.menuButton}
-          onClick={onOpen}
           aria-label="Abrir el menu de navegacion"
+          className={styles.menuButton}
+          type="button"
+          onClick={onOpen}
         >
           <span className={styles.menu} />
         </button>
