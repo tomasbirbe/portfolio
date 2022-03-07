@@ -13,6 +13,17 @@
   }
 }
 
+@layer components{
+  .page{
+    position: relative;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction: column;
+    height: 100vh;
+  }
+}
+
 :root{
   /* Colors */
   --raisin-black: #332E3C;
