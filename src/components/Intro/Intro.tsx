@@ -1,4 +1,5 @@
 import styles from './Intro.module.css';
+import Image from 'next/image';
 import { DownArrow } from '../Icons';
 
 export default function Intro() {
@@ -8,32 +9,39 @@ export default function Intro() {
 
   return (
     <section className={styles.container} id="intro">
-      <img
-        src="profilepic.webp"
-        alt="A profile pic of me!"
-        className={styles.profilePic}
-      />
-      <div className={styles.introContainer}>
-        <h1 className={styles.title}>Hola!</h1>
-        <p className={styles.intro}>
-          Mi nombre es Tomás.{' '}
-          <span className={styles.bold}>
-            Soy Desarrollador Front End React{' '}
-          </span>
+      <div className="w-[250px] lg:w-[300px]">
+        <Image
+          src="/profilepic.webp"
+          alt="A profile pic of me!"
+          layout="responsive"
+          width={300}
+          height={300}
+          className="rounded-full"
+        />
+      </div>
+
+      <div className="flex flex-col items-center gap-6">
+        <h2>Hola!</h2>
+        <p className="text-center w-[300px]">
+          Mi nombre es Tomás.&nbsp;
+          <strong className="font-bold">
+            Soy Desarrollador Front End React&nbsp;
+          </strong>
           y espero poder mostrarte un poco lo que hago (que por cierto, me gusta
           mucho) y quien soy.
         </p>
-        <div className={styles.icons}>
+        <div className="hidden lg:flex lg:gap-8">
           <a
             href="mailto: tomas.birbe@gmail.com"
             aria-label="Enviar un correo a tomas.birbe@gmail.com"
             rel="noreferrer noopener"
           >
-            <img
-              className={styles.email}
-              src="icons/email.svg"
+            <Image
+              src="/icons/email.svg"
               alt="A letter icon"
               loading="lazy"
+              width={40}
+              height={40}
             />
             <span></span>
           </a>
@@ -43,11 +51,12 @@ export default function Intro() {
             rel="noreferrer noopener"
             aria-label="Ir al perfil de LinkedIn de Tomas Birbe"
           >
-            <img
-              className={styles.linkedin}
-              src="icons/white-linkedin.svg"
-              alt="A LinkedIn Icon"
+            <Image
+              src="/icons/white-linkedin.svg"
+              alt="A LinkedIn icon"
               loading="lazy"
+              width={40}
+              height={40}
             />
             <span></span>
           </a>
@@ -57,11 +66,12 @@ export default function Intro() {
             rel="noreferrer noopener"
             aria-label="Ir al perfil de GitHub de Tomas Birbe"
           >
-            <img
-              className={styles.github}
-              src="icons/github.svg"
-              alt="A GitHub Icon"
+            <Image
+              src="/icons/github.svg"
+              alt="A letter icon"
               loading="lazy"
+              width={45}
+              height={45}
             />
             <span></span>
           </a>
