@@ -4,7 +4,21 @@ import { DownArrow } from '../Icons';
 
 export default function Intro() {
   return (
-    <section className="page flex-row justify-around" id="intro">
+    <section
+      className="page flex-col jusify-center gap-14 lg:flex-row-reverse lg:justify-around"
+      id="intro"
+    >
+      <div className="w-[250px] lg:w-[400px]">
+        <Image
+          priority
+          alt="A profile pic of me!"
+          className="rounded-full"
+          height={300}
+          layout="responsive"
+          src="/profilepic.webp"
+          width={300}
+        />
+      </div>
       <div className="flex flex-col items-center gap-6">
         <h2>Hola!</h2>
         <p className="text-center w-[300px]">
@@ -55,17 +69,6 @@ export default function Intro() {
             />
           </a>
         </div>
-      </div>
-      <div className="w-[250px] lg:w-[400px]">
-        <Image
-          priority
-          alt="A profile pic of me!"
-          className="rounded-full"
-          height={300}
-          layout="responsive"
-          src="/profilepic.webp"
-          width={300}
-        />
       </div>
       <DownArrow href="#about-me" />
     </section>

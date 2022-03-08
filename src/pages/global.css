@@ -11,6 +11,25 @@
   h2 {
     @apply font-black text-3xl;
   }
+  h3 {
+    @apply font-bold text-3xl;
+  }
+  figure {
+    @apply flex flex-col justify-center content-center text-center gap-2;
+  }
+  a {
+    @apply inline-block h-min;
+  }
+  #__next{
+    height: 100%;
+  }
+  main{
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: var(--height);
+    color: white;
+  }
 }
 
 @layer components{

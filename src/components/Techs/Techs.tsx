@@ -1,131 +1,95 @@
 import React from 'react';
+import Image from 'next/image';
+
 import { DownArrow } from '../Icons';
-import styles from './Techs.module.css';
 
 const Techs = () => {
   return (
-    <section className={styles.container} id="techs">
-      <h2 className={styles.title}>Tecnologias</h2>
-      <article className={styles.techs}>
+    <section className="page gap-[4em]" id="techs">
+      <h2>Tecnologias</h2>
+      <article className="grid grid-cols-2 md:grid-cols-3 content-center gap-y-16 gap-x-6">
         <a
-          href="https://www.typescriptlang.org/"
-          target="_blank"
-          rel="noreferrer noopener"
-          className={styles.ts_link}
           aria-label="Ir a la documentacion de TypeScript"
+          href="https://www.typescriptlang.org/"
+          rel="noreferrer noopener"
+          target="_blank"
         >
-          <figure className={styles.figure}>
-            <img
-              src="icons/ts.svg"
+          <figure>
+            <Image
               alt="Logo de TypeScript"
-              className={styles.ts}
+              height={60}
               loading="lazy"
+              src="/icons/ts.svg"
+              width={60}
             />
-            <figcaption className={styles.figcaption}>TypeScript</figcaption>
+            <figcaption>TypeScript</figcaption>
           </figure>
         </a>
         <a
-          href="https://reactjs.org/"
-          target="_blank"
-          rel="noreferrer noopener"
-          className={styles.react_link}
           aria-label="Ir a la documentacion de React"
+          href="https://reactjs.org/"
+          rel="noreferrer noopener"
+          target="_blank"
         >
-          <figure className={styles.figure}>
-            <img
-              src="icons/react.svg"
+          <figure>
+            <Image
               alt="Logo de React"
-              className={styles.react}
+              height={60}
               loading="lazy"
+              src="/icons/react.svg"
+              width={60}
             />
-            <figcaption className={styles.figcaption}>React</figcaption>
+            <figcaption>React</figcaption>
           </figure>
         </a>
         <a
-          href="https://developer.mozilla.org/en-US/docs/Web/javascript"
-          target="_blank"
-          rel="noreferrer noopener"
-          className={styles.js_link}
           aria-label="Ir a la documentacion de JavaScript"
+          href="https://developer.mozilla.org/en-US/docs/Web/javascript"
+          rel="noreferrer noopener"
+          target="_blank"
         >
-          <figure className={styles.figure}>
-            <img
-              src="icons/js.svg"
+          <figure>
+            <Image
               alt="Logo de JavaScript"
-              className={styles.js}
+              height={60}
               loading="lazy"
+              src="/icons/js.svg"
+              width={60}
             />
-            <figcaption className={styles.figcaption}>JavaScript</figcaption>
+            <figcaption>JavaScript</figcaption>
           </figure>
         </a>
         <a
-          href="https://developer.mozilla.org/en-US/docs/Web/HTML"
-          target="_blank"
-          rel="noreferrer noopener"
-          className={styles.html_link}
           aria-label="Ir a la documentacion de HTML"
+          href="https://developer.mozilla.org/en-US/docs/Web/HTML"
+          rel="noreferrer noopener"
+          target="_blank"
         >
-          <figure className={styles.figure}>
-            <img
-              src="icons/html.svg"
-              alt="Logo de HTML"
-              className={styles.html}
-              loading="lazy"
-            />
-            <figcaption className={styles.figcaption}>HTML</figcaption>
+          <figure>
+            <Image alt="Logo de HTML" height={60} loading="lazy" src="/icons/html.svg" width={60} />
+            <figcaption>HTML</figcaption>
           </figure>
         </a>
         <a
-          href="https://developer.mozilla.org/en-US/docs/Web/CSS"
-          target="_blank"
-          rel="noreferrer noopener"
-          className={styles.css_link}
           aria-label="Ir a la documentacion de CSS"
+          href="https://developer.mozilla.org/en-US/docs/Web/CSS"
+          rel="noreferrer noopener"
+          target="_blank"
         >
-          <figure className={styles.figure}>
-            <img
-              src="icons/css.svg"
-              alt="Logo de CSS"
-              className={styles.html}
-            />
-            <figcaption className={styles.figcaption}>CSS</figcaption>
+          <figure>
+            <Image alt="Logo de CSS" height={60} src="/icons/css.svg" width={60} />
+            <figcaption>CSS</figcaption>
           </figure>
         </a>
         <a
-          href="https://chakra-ui.com/"
-          target="_blank"
+          aria-label="Ir a la documentacion de Git"
+          href="https://git-scm.com/"
           rel="noreferrer noopener"
-          className={styles.chakra_link}
-          aria-label="Ir a la documentacion de ChakraUI"
-        >
-          <figure className={styles.figure}>
-            <img
-              src="icons/chakra.svg"
-              alt="Logo de ChakraUI"
-              className={styles.chakra}
-              loading="lazy"
-            />
-            <figcaption className={styles.figcaption}>Chakra-UI</figcaption>
-          </figure>
-        </a>
-        <a
-          href="https://styled-components.com/"
           target="_blank"
-          rel="noreferrer noopener"
-          className={styles.styled_link}
-          aria-label="Ir a la documentacion de Styled Components"
         >
-          <figure className={styles.figure}>
-            <img
-              src="icons/styled-components.svg"
-              alt="Logo de Styled Components"
-              className={styles.styled}
-              loading="lazy"
-            />
-            <figcaption className={styles.figcaption}>
-              <span>Styled</span>
-              <span>Components</span>
-            </figcaption>
+          <figure>
+            <Image alt="Logo de Git" height={60} src="/icons/git.svg" width={60} />
+            <figcaption>Git</figcaption>
           </figure>
         </a>
       </article>

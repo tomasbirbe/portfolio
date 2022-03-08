@@ -14,8 +14,8 @@ export default function About() {
           incursionar en el desarrollo web y aprender las tecnologias que se utliizan.
         </span>
         <span>
-          ¿Tecnologias? ¡Cierto las{' '}
-          <a aria-label="Ir a la pagina de Tecnologias" className="font-bold" href="#techs">
+          ¿Tecnologias? ¡Cierto las&nbsp;
+          <a aria-label="Ir a la pagina de Tecnologias" className="font-bold " href="#techs">
             tecnologias!
           </a>
         </span>
