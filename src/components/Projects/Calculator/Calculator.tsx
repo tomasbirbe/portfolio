@@ -1,15 +1,13 @@
 import Image from 'next/image';
+import Link from 'next/link';
 
 import { DownArrow } from '../../Icons';
-import general from '../general.module.css';
-
-import styles from './Calculator.module.css';
 
 const Calculator = () => {
   return (
     <section className="page" id="calculator">
-      <article className="flex flex-row w-[1100px] h-[450px] text-center items-center justify-between">
-        <div className="flex h-full flex-col items-center justify-between">
+      <article className="flex flex-row text-center md:gap-12 xl:gap-[8em] items-center justify-between">
+        <div className="flex h-full flex-col gap-8 items-center justify-between">
           <h3>
             <a
               aria-label="Ir al proyecto Calculadora"
@@ -21,7 +19,7 @@ const Calculator = () => {
               Calculadora
             </a>
           </h3>
-          <div className="w-[350px]">
+          <div className="max-w-[370px] min-w-[250px]">
             Este proyecto es una calculadora que puede guardar y mostrar valores definidos por el
             usuario. Uno de los primeros proyectos que me ayudo a ganar experiencia con CSS Grid,
             React y LocalStorage.
@@ -59,17 +57,17 @@ const Calculator = () => {
             />
           </div>
         </div>
-        <div className="w-[500px]">
-          <Image
-            alt="An image preview of Calculator App"
-            className={general.img}
-            height={400}
-            layout="responsive"
-            loading="lazy"
-            src="/calculadora.webp"
-            width={800}
-          />
-        </div>
+        <Link href="https://tb-calculator.vercel.app/">
+          <a className="hidden hover:scale-110 transition-all hover:shadow-xl hover: md:block md:w-[350px] md:h-[350px] lg:w-[500px] xl:w-[600px] relative">
+            <Image
+              alt="An image preview of Calculator App"
+              className="object-cover rounded-2xl w-[200px]"
+              layout="fill"
+              loading="lazy"
+              src="/calculadora.webp"
+            />
+          </a>
+        </Link>
       </article>
       <DownArrow href="#contact" />
     </section>
