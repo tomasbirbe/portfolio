@@ -9,15 +9,16 @@ const Calculator = () => {
       <article className="flex flex-row text-center md:gap-12 xl:gap-[8em] items-center justify-between">
         <div className="flex h-full flex-col gap-8 items-center justify-between">
           <h3>
-            <a
-              aria-label="Ir al proyecto Calculadora"
-              className="hover:bg-white hover:text-black p-2 rounded transition-all"
-              href="https://tb-calculator.vercel.app/"
-              rel="noreferrer noopener"
-              target="_blank"
-            >
-              Calculadora
-            </a>
+            <Link href="https://tb-calculator.vercel.app/">
+              <a
+                aria-label="Ir al proyecto Calculadora"
+                className="hover:bg-white hover:text-black p-2 rounded transition-all"
+                rel="noreferrer noopener"
+                target="_blank"
+              >
+                Calculadora
+              </a>
+            </Link>
           </h3>
           <div className="max-w-[370px] min-w-[250px]">
             Este proyecto es una calculadora que puede guardar y mostrar valores definidos por el
@@ -58,7 +59,11 @@ const Calculator = () => {
           </div>
         </div>
         <Link href="https://tb-calculator.vercel.app/">
-          <a className="hidden hover:scale-110 transition-all hover:shadow-xl hover: md:block md:w-[350px] md:h-[350px] lg:w-[500px] xl:w-[600px] relative">
+          <a
+            className="hidden hover:scale-110 transition-all hover:shadow-xl hover: md:block md:w-[350px] md:h-[350px] lg:w-[500px] xl:w-[600px] relative"
+            rel="noreferrer noopener"
+            target="_blank"
+          >
             <Image
               alt="An image preview of Calculator App"
               className="object-cover rounded-2xl w-[200px]"

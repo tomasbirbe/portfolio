@@ -5,8 +5,11 @@ import { DownArrow } from '../Icons';
 
 export default function Intro() {
   return (
-    <section className="page gap-7 lg:gap-14 lg:flex-row-reverse lg:justify-around" id="intro">
-      <div className="w-[250px] lg:w-[350px] 2xl:w-[400px]">
+    <section
+      className="page gap-12 pb-[2em] lg:gap-14 lg:flex-row-reverse lg:justify-around"
+      id="intro"
+    >
+      <div className="w-[150px] lg:w-[300px]">
         <Image
           priority
           alt="A profile pic of me!"
@@ -17,9 +20,9 @@ export default function Intro() {
           width={300}
         />
       </div>
-      <div className="flex flex-col items-center gap-6">
+      <div className="flex flex-col items-center gap-3 lg:gap-6">
         <h2>Hola!</h2>
-        <p className="text-center w-[300px]">
+        <p className="text-center min-w-[300px] max-w-[400px] px-4 md:px-0">
           Mi nombre es Tomás.&nbsp;
           <strong className="font-bold">Soy Desarrollador Front End React&nbsp;</strong>y espero
           poder mostrarte un poco lo que hago (que por cierto, me gusta mucho) y quien soy.
@@ -67,6 +70,49 @@ export default function Intro() {
             </a>
           </Link>
         </div>
+      </div>
+      <div className="flex flex-row gap-8 lg:hidden">
+        <Link href="mailto: tomas.birbe@gmail.com">
+          <a aria-label="Enviar un correo a tomas.birbe@gmail.com" rel="noreferrer noopener">
+            <Image
+              alt="A letter icon"
+              height={40}
+              loading="lazy"
+              src="/icons/email.svg"
+              width={40}
+            />
+          </a>
+        </Link>
+        <Link href="https://www.linkedin.com/in/tomas-birbe/">
+          <a
+            aria-label="Ir al perfil de LinkedIn de Tomas Birbe"
+            rel="noreferrer noopener"
+            target="_blank"
+          >
+            <Image
+              alt="A LinkedIn icon"
+              height={40}
+              loading="lazy"
+              src="/icons/white-linkedin.svg"
+              width={40}
+            />
+          </a>
+        </Link>
+        <Link href="https://github.com/tomasbirbe">
+          <a
+            aria-label="Ir al perfil de GitHub de Tomas Birbe"
+            rel="noreferrer noopener"
+            target="_blank"
+          >
+            <Image
+              alt="A letter icon"
+              height={45}
+              loading="lazy"
+              src="/icons/github.svg"
+              width={45}
+            />
+          </a>
+        </Link>
       </div>
       <DownArrow href="#about-me" />
     </section>
