@@ -6,7 +6,7 @@ import Image from 'next/image';
 const Intro = dynamic(() => import('components/Intro/Intro'));
 const About = dynamic(() => import('components/About/About'));
 const Techs = dynamic(() => import('components/Techs/Techs'));
-const Projects = dynamic(() => import('components/Prcojects/Projects'));
+const Projects = dynamic(() => import('components/Projects/Projects'));
 const TwitterClone = dynamic(() => import('components/Projects/TwitterClone/TwitterClone'));
 const Calculator = dynamic(() => import('components/Projects/Calculator/Calculator'));
 const Contact = dynamic(() => import('components/Contact/Contact'));
