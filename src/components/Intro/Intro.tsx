@@ -20,13 +20,11 @@ export default function Intro() {
           width={300}
         />
       </div>
-      <div className="flex flex-col items-center gap-3 lg:gap-6">
-        <h2>Hola!</h2>
-        <p className="text-center min-w-[300px] max-w-[400px] px-4 md:px-0">
-          Mi nombre es Tomás.&nbsp;
-          <strong className="font-bold">Soy Desarrollador Front End React&nbsp;</strong>y espero
-          poder mostrarte un poco lo que hago (que por cierto, me gusta mucho) y quien soy.
-        </p>
+      <div className="flex flex-col items-center gap-4 lg:gap-8">
+        <div className="flex flex-col items-center justify-center gap-2">
+          <h1>Tomás Birbe</h1>
+          <p className="text-center text-xl">Desarrollador Front-End React</p>
+        </div>
         <div className="hidden lg:flex lg:gap-8">
           <Link href="mailto: tomas.birbe@gmail.com">
             <a aria-label="Enviar un correo a tomas.birbe@gmail.com" rel="noreferrer noopener">

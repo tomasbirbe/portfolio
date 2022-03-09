@@ -10,13 +10,8 @@ function Projects() {
           me gustaria que veas algunas cosas que hice con estas herramientas (y otras más)
         </span>
         <span>
-<<<<<<< HEAD
-          Todos los proyectos que encuentres estan en produccion y podes acceder
-          a cada uno de ellos haciendo click en el titulo del proyecto
-=======
           Todos los proyectos que encuentres estan en produccion y podes acceder a cada uno de ellos
           clickando en el titulo
->>>>>>> AddTailwind
         </span>
         <span>¡Espero los disfrutes tanto como yo!</span>
       </article>
