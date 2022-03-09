@@ -6,8 +6,8 @@ import DrawerLink from './DrawerLink';
 const Drawer = ({ isOpen, onClose }: { isOpen: any; onClose: any }) => {
   return (
     <div
-      className={`flex w-full max-w-[500px] left-[-500px] shadow-xl h-full flex-col bg-raisin-black gap-4 pt-10 absolute z-[2] top-[0] transition-all duration-500 ${
-        isOpen ? 'visible translate-x-[500px]' : 'invisible'
+      className={`flex w-full max-w-[500px] left-[-500px] shadow-xl h-full flex-col bg-raisin-black gap-4 pt-10 absolute z-[2] top-[0] transition-all duration-300 ${
+        isOpen ? 'visible translate-x-[500px] opacity-100' : 'invisible opacity-0'
       }`}
     >
       <ul className="flex flex-col gap-6 pl-8">

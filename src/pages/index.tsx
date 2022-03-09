@@ -2,6 +2,7 @@ import Head from 'next/head';
 import dynamic from 'next/dynamic';
 import useToggle from 'hooks/useToggle';
 import Image from 'next/image';
+import Blommy from 'components/Projects/Blommy/Blommy';
 
 const Intro = dynamic(() => import('components/Intro/Intro'));
 const About = dynamic(() => import('components/About/About'));
@@ -46,6 +47,7 @@ export default function Home() {
           <About />
           <Techs />
           <Projects />
+          <Blommy />
           <TwitterClone />
           <Calculator />
           <Contact />
