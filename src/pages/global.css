@@ -30,6 +30,9 @@
     height: var(--height);
     color: white;
   }
+  nav li{
+
+  }
 }
 
 @layer components{
@@ -39,7 +42,37 @@
     justify-content:center;
     align-items:center;
     flex-direction: column;
-    height: 100vh;
+    height: 100%;
+  }
+
+  a:hover > .overlay-subnav {
+    display:block;
+  }
+
+  .overlay-subnav{
+    display:none;
+    background: transparent;
+    position:absolute;
+    top:100%;
+    left:-7%;
+    padding-block-start:1em;
+  }
+
+  a:hover > .overlay-subnav > .subnav {
+    display:flex;
+    opacity:1;
+    color:white;
+  }
+  .subnav{
+    display:none;
+    transition: all 150ms ease-in-out;
+    opacity:0;
+    flex-direction:column;
+    gap:0.5em;
+    align-items:center;
+    justify-content:flex-start;
+    text-align:center;
+    @apply bg-raisin-black shadow-lg rounded-xl outline outline-1 outline-rhythm;
   }
 }
 

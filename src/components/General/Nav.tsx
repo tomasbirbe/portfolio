@@ -1,79 +1,37 @@
-import { useState } from 'react';
 import styles from './Nav.module.css';
+import NavLink from './NavLink';
 
 const Nav = () => {
-  const [subnav, setSubnav] = useState(`${styles.subnav}`);
-
   return (
-    <ul className={styles.nav}>
-      <li>
-        <a
-          className={styles.navlink}
-          href="#intro"
-          aria-label="Ir a la seccion Introduccion"
-        >
+    <nav className="hidden scroll-mt-4 lg:flex lg:sticky w-full outline outline-1	outline-rhythm h-[70px] px-4 z-[1] bg-raisin-black">
+      <ul className="flex flex-row gap-4 text-white w-full items-center">
+        <NavLink aria-label="Ir a la seccion Introduccion" href="#intro">
           Introduccion
-        </a>
-      </li>
-      <li>
-        <a
-          className={styles.navlink}
-          href="#about-me"
-          aria-label="Ir a la seccion Sobre Mi"
-        >
+        </NavLink>
+        <NavLink aria-label="Ir a la seccion Sobre Mi" href="#about-me">
           Sobre mi
-        </a>
-      </li>
-      <li>
-        <a
-          className={styles.navlink}
-          href="#techs"
-          aria-label="Ir a la seccion Tecnologias"
-        >
+        </NavLink>
+        <NavLink aria-label="Ir a la seccion Tecnologias" href="#techs">
           Tecnologias
-        </a>
-      </li>
-      <li>
-        <a
-          className={styles.navlink}
-          href="#projects"
-          aria-label="Ir a la seccion Proyectos"
-        >
+        </NavLink>
+        <NavLink aria-label="Ir a la seccion Proyectos" href="#projects">
           Proyectos
-        </a>
-        <div className={styles.container_subnav}>
-          <ul className={styles.subnav}>
-            <li>
-              <a
-                className={styles.navlink}
-                href="#twitter-clone"
-                aria-label="Ir a la seccion Proyectos: Twitter Clone"
-              >
+          <div className="overlay-subnav">
+            <ul className="subnav">
+              <NavLink aria-label="Ir a la seccion Proyectos: Twitter Clone" href="#twitter-clone">
                 Twitter Clone
-              </a>
-            </li>
-            <li>
-              <a
-                className={styles.navlink}
-                href="#calculator"
-                aria-label="Ir a la seccion Proyectos: Calculadora"
-              >
+              </NavLink>
+              <NavLink aria-label="Ir a la seccion Proyectos: Calculadora" href="#calculator">
                 Calculadora
-              </a>
-            </li>
-          </ul>
-        </div>
-      </li>
-      <li>
-        <a
-          className={styles.navlink}
-          href="#contact"
-          aria-label="Ir a la seccion Contacto"
-        >
+              </NavLink>
+            </ul>
+          </div>
+        </NavLink>
+        <NavLink aria-label="Ir a la seccion Contacto" href="#contact">
           Contacto
-        </a>
-      </li>
-    </ul>
+        </NavLink>
+      </ul>
+    </nav>
   );
 };
 

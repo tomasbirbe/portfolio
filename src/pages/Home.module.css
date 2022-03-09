@@ -2,8 +2,10 @@
   scroll-behavior: smooth;
   scroll-snap-type: y mandatory;
   overflow-y: scroll;
-  height: var(--height);
+  height: 93vh;
   color: white;
+  position:relative;
+
 }
 
 .menuButton{

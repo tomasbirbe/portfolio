@@ -69,7 +69,7 @@ const Calculator = () => {
           </div>
         </div>
       </article>
-      <DownArrow href="#contact" />
+      <DownArrow href="#calculator" />
     </section>
   );
 };

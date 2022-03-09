@@ -47,8 +47,8 @@ export default function Home() {
         <link href="https://tb-twitter.vercel.app/" rel="preconnect" />
         <link href="https://fonts.gstatic.com" rel="preconnect" />
       </Head>
+      <Nav />
       <main className={`${styles.container}`}>
-        <Nav />
         <Intro />
         <About />
         <Techs />

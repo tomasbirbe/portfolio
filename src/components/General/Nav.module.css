@@ -17,6 +17,7 @@
     z-index: 1;
     border-block-end: 1px solid var(--rhythm);
     list-style: none;
+    
   }
 
   .nav > li {
