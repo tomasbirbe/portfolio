@@ -1,131 +1,89 @@
 import React from 'react';
+import Image from 'next/image';
+
 import { DownArrow } from '../Icons';
-import styles from './Techs.module.css';
 
 const Techs = () => {
   return (
-    <section className={styles.container} id="techs">
-      <h2 className={styles.title}>Tecnologias</h2>
-      <article className={styles.techs}>
+    <section className="page pb-[4em] gap-[3em]" id="techs">
+      <h2>Tecnologias</h2>
+      <article className="grid grid-cols-2 sm:grid-cols-3 content-center gap-y-10 sm:gap-y-16 gap-x-6">
         <a
-          href="https://www.typescriptlang.org/"
-          target="_blank"
-          rel="noreferrer noopener"
-          className={styles.ts_link}
           aria-label="Ir a la documentacion de TypeScript"
+          href="https://www.typescriptlang.org/"
+          rel="noreferrer noopener"
+          target="_blank"
         >
-          <figure className={styles.figure}>
-            <img
-              src="icons/ts.svg"
-              alt="Logo de TypeScript"
-              className={styles.ts}
-              loading="lazy"
-            />
-            <figcaption className={styles.figcaption}>TypeScript</figcaption>
+          <figure className="flex flex-col justify-center items-center">
+            <div className="relative w-[50px] h-[50px] sm:w-[60px] sm:h-[60px]">
+              <Image alt="Logo de TypeScript" layout="fill" loading="lazy" src="/icons/ts.svg" />
+            </div>
+            <figcaption>TypeScript</figcaption>
           </figure>
         </a>
         <a
-          href="https://reactjs.org/"
-          target="_blank"
-          rel="noreferrer noopener"
-          className={styles.react_link}
           aria-label="Ir a la documentacion de React"
+          href="https://reactjs.org/"
+          rel="noreferrer noopener"
+          target="_blank"
         >
-          <figure className={styles.figure}>
-            <img
-              src="icons/react.svg"
-              alt="Logo de React"
-              className={styles.react}
-              loading="lazy"
-            />
-            <figcaption className={styles.figcaption}>React</figcaption>
+          <figure className="flex flex-col justify-center items-center">
+            <div className="relative w-[50px] h-[50px] sm:w-[60px] sm:h-[60px]">
+              <Image alt="Logo de React" layout="fill" loading="lazy" src="/icons/react.svg" />
+            </div>
+            <figcaption>React</figcaption>
           </figure>
         </a>
         <a
-          href="https://developer.mozilla.org/en-US/docs/Web/javascript"
-          target="_blank"
-          rel="noreferrer noopener"
-          className={styles.js_link}
           aria-label="Ir a la documentacion de JavaScript"
+          href="https://developer.mozilla.org/en-US/docs/Web/javascript"
+          rel="noreferrer noopener"
+          target="_blank"
         >
-          <figure className={styles.figure}>
-            <img
-              src="icons/js.svg"
-              alt="Logo de JavaScript"
-              className={styles.js}
-              loading="lazy"
-            />
-            <figcaption className={styles.figcaption}>JavaScript</figcaption>
+          <figure className="flex flex-col justify-center items-center">
+            <div className="relative w-[50px] h-[50px] sm:w-[60px] sm:h-[60px]">
+              <Image alt="Logo de JavaScript" layout="fill" loading="lazy" src="/icons/js.svg" />
+            </div>
+            <figcaption>JavaScript</figcaption>
           </figure>
         </a>
         <a
-          href="https://developer.mozilla.org/en-US/docs/Web/HTML"
-          target="_blank"
-          rel="noreferrer noopener"
-          className={styles.html_link}
           aria-label="Ir a la documentacion de HTML"
+          href="https://developer.mozilla.org/en-US/docs/Web/HTML"
+          rel="noreferrer noopener"
+          target="_blank"
         >
-          <figure className={styles.figure}>
-            <img
-              src="icons/html.svg"
-              alt="Logo de HTML"
-              className={styles.html}
-              loading="lazy"
-            />
-            <figcaption className={styles.figcaption}>HTML</figcaption>
+          <figure className="flex flex-col justify-center items-center">
+            <div className="relative w-[50px] h-[50px] sm:w-[60px] sm:h-[60px]">
+              <Image alt="Logo de HTML" layout="fill" loading="lazy" src="/icons/html.svg" />
+            </div>
+            <figcaption>HTML</figcaption>
           </figure>
         </a>
         <a
-          href="https://developer.mozilla.org/en-US/docs/Web/CSS"
-          target="_blank"
-          rel="noreferrer noopener"
-          className={styles.css_link}
           aria-label="Ir a la documentacion de CSS"
+          href="https://developer.mozilla.org/en-US/docs/Web/CSS"
+          rel="noreferrer noopener"
+          target="_blank"
         >
-          <figure className={styles.figure}>
-            <img
-              src="icons/css.svg"
-              alt="Logo de CSS"
-              className={styles.html}
-            />
-            <figcaption className={styles.figcaption}>CSS</figcaption>
+          <figure className="flex flex-col justify-center items-center">
+            <div className="relative w-[50px] h-[50px] sm:w-[60px] sm:h-[60px]">
+              <Image alt="Logo de CSS" layout="fill" src="/icons/css.svg" />
+            </div>
+            <figcaption>CSS</figcaption>
           </figure>
         </a>
         <a
-          href="https://chakra-ui.com/"
-          target="_blank"
+          aria-label="Ir a la documentacion de Git"
+          href="https://git-scm.com/"
           rel="noreferrer noopener"
-          className={styles.chakra_link}
-          aria-label="Ir a la documentacion de ChakraUI"
-        >
-          <figure className={styles.figure}>
-            <img
-              src="icons/chakra.svg"
-              alt="Logo de ChakraUI"
-              className={styles.chakra}
-              loading="lazy"
-            />
-            <figcaption className={styles.figcaption}>Chakra-UI</figcaption>
-          </figure>
-        </a>
-        <a
-          href="https://styled-components.com/"
           target="_blank"
-          rel="noreferrer noopener"
-          className={styles.styled_link}
-          aria-label="Ir a la documentacion de Styled Components"
         >
-          <figure className={styles.figure}>
-            <img
-              src="icons/styled-components.svg"
-              alt="Logo de Styled Components"
-              className={styles.styled}
-              loading="lazy"
-            />
-            <figcaption className={styles.figcaption}>
-              <span>Styled</span>
-              <span>Components</span>
-            </figcaption>
+          <figure className="flex flex-col justify-center items-center">
+            <div className="relative w-[50px] h-[50px] sm:w-[60px] sm:h-[60px]">
+              <Image alt="Logo de Git" layout="fill" src="/icons/git.svg" />
+            </div>
+            <figcaption>Git</figcaption>
           </figure>
         </a>
       </article>
