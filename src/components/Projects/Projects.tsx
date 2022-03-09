@@ -11,11 +11,11 @@ function Projects() {
         </span>
         <span>
           Todos los proyectos que encuentres estan en produccion y podes acceder a cada uno de ellos
-          haciendo click en el titulo del proyecto o la vista previa.
+          clickando en el titulo o en la vista previa.
         </span>
         <span>¡Espero los disfrutes tanto como yo!</span>
       </article>
-      <DownArrow href="#twitter-clone" />
+      <DownArrow href="#blommy" />
     </section>
   );
 }

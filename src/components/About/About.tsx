@@ -6,18 +6,17 @@ export default function About() {
       <h2>Sobre mi</h2>
       <article className="flex flex-col max-w-[500px] text-center items-center gap-8">
         <span>
-          En 2018 empece a estudiar Ingenieria en Sistemas con mucho entusiasmo pero por cuestiones
-          de la pandemia tuve que suspender el cursado por tiempo indeterminado.
+          Hola! Mi nombre es Tomás, soy&nbsp;{' '}
+          <strong className="font-bold">Desarrollador Front-End React</strong>. En mi día a día
+          utilizo React, HTML, CSS, JavaScript, Git y bases de datos SQL.
         </span>
         <span>
-          A pesar de las consecuencias negativas de la pandemia, para mi fue una oportunidad para
-          incursionar en el desarrollo web y aprender las tecnologias que se utliizan.
+          Tambien disfruto de aprender y utilizar NodesJS con ExpressJS, NextJS, TypeScript,
+          Tailwind y ChakraUI.
         </span>
         <span>
-          ¿Tecnologias? ¡Cierto las&nbsp;
-          <a aria-label="Ir a la pagina de Tecnologias" className="font-bold " href="#techs">
-            tecnologias!
-          </a>
+          Mientras tanto en busca de mi primer experienca laboral, ansioso de trabajar en equipo y
+          encontrar desafios para ponerme a prueba!
         </span>
       </article>
       <DownArrow href="#techs" />
