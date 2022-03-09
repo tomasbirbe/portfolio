@@ -18,16 +18,6 @@ const Nav = dynamic(() => import('components/General/Nav'));
 export default function Home() {
   const { onOpen, onClose, isOpen } = useToggle();
 
-  useEffect(() => {
-    const vh = window.innerHeight;
-
-    if (window.innerWidth >= 1024) {
-      document.documentElement.style.setProperty('--mainHeight', vh - 73 + 'px');
-    } else {
-      document.documentElement.style.setProperty('--mainHeight', vh + 'px');
-    }
-  }, []);
-
   return (
     <>
       <Head>
@@ -51,25 +41,27 @@ export default function Home() {
         <link href="https://tb-twitter.vercel.app/" rel="preconnect" />
         <link href="https://fonts.gstatic.com" rel="preconnect" />
       </Head>
-      <Nav />
-      <main>
-        <Intro />
-        <About />
-        <Techs />
-        <Projects />
-        <TwitterClone />
-        <Calculator />
-        <Contact />
-        <Drawer isOpen={isOpen} onClose={onClose} />
-        <button
-          aria-label="Abrir el menu de navegacion"
-          className={styles.menuButton}
-          type="button"
-          onClick={onOpen}
-        >
-          <span className={styles.menu} />
-        </button>
-      </main>
+      <div className="h-[100vh] flex-col relative flex">
+        <Nav />
+        <main>
+          <Intro />
+          <About />
+          <Techs />
+          <Projects />
+          <TwitterClone />
+          <Calculator />
+          <Contact />
+          <Drawer isOpen={isOpen} onClose={onClose} />
+          <button
+            aria-label="Abrir el menu de navegacion"
+            className={styles.menuButton}
+            type="button"
+            onClick={onOpen}
+          >
+            <span className={styles.menu} />
+          </button>
+        </main>
+      </div>
     </>
   );
 }

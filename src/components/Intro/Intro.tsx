@@ -5,10 +5,7 @@ import { DownArrow } from '../Icons';
 
 export default function Intro() {
   return (
-    <section
-      className="page flex-col jusify-center gap-7 lg:gap-14 lg:flex-row-reverse lg:justify-around"
-      id="intro"
-    >
+    <section className="page gap-7 lg:gap-14 lg:flex-row-reverse lg:justify-around" id="intro">
       <div className="w-[250px] lg:w-[350px] 2xl:w-[400px]">
         <Image
           priority

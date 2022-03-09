@@ -1,6 +1,6 @@
 .container{
   position: absolute;
-  bottom: 1em;
+  bottom:15px;
   width:fit-content;
   padding: 0.7em;
   left: calc(50% - 24px);
