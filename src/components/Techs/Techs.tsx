@@ -5,23 +5,19 @@ import { DownArrow } from '../Icons';
 
 const Techs = () => {
   return (
-    <section className="page gap-[4em]" id="techs">
+    <section className="page pb-[4em] gap-[3em]" id="techs">
       <h2>Tecnologias</h2>
-      <article className="grid grid-cols-2 md:grid-cols-3 content-center gap-y-16 gap-x-6">
+      <article className="grid grid-cols-2 sm:grid-cols-3 content-center gap-y-10 sm:gap-y-16 gap-x-6">
         <a
           aria-label="Ir a la documentacion de TypeScript"
           href="https://www.typescriptlang.org/"
           rel="noreferrer noopener"
           target="_blank"
         >
-          <figure>
-            <Image
-              alt="Logo de TypeScript"
-              height={60}
-              loading="lazy"
-              src="/icons/ts.svg"
-              width={60}
-            />
+          <figure className="flex flex-col justify-center items-center">
+            <div className="relative w-[50px] h-[50px] sm:w-[60px] sm:h-[60px]">
+              <Image alt="Logo de TypeScript" layout="fill" loading="lazy" src="/icons/ts.svg" />
+            </div>
             <figcaption>TypeScript</figcaption>
           </figure>
         </a>
@@ -31,14 +27,10 @@ const Techs = () => {
           rel="noreferrer noopener"
           target="_blank"
         >
-          <figure>
-            <Image
-              alt="Logo de React"
-              height={60}
-              loading="lazy"
-              src="/icons/react.svg"
-              width={60}
-            />
+          <figure className="flex flex-col justify-center items-center">
+            <div className="relative w-[50px] h-[50px] sm:w-[60px] sm:h-[60px]">
+              <Image alt="Logo de React" layout="fill" loading="lazy" src="/icons/react.svg" />
+            </div>
             <figcaption>React</figcaption>
           </figure>
         </a>
@@ -48,14 +40,10 @@ const Techs = () => {
           rel="noreferrer noopener"
           target="_blank"
         >
-          <figure>
-            <Image
-              alt="Logo de JavaScript"
-              height={60}
-              loading="lazy"
-              src="/icons/js.svg"
-              width={60}
-            />
+          <figure className="flex flex-col justify-center items-center">
+            <div className="relative w-[50px] h-[50px] sm:w-[60px] sm:h-[60px]">
+              <Image alt="Logo de JavaScript" layout="fill" loading="lazy" src="/icons/js.svg" />
+            </div>
             <figcaption>JavaScript</figcaption>
           </figure>
         </a>
@@ -65,8 +53,10 @@ const Techs = () => {
           rel="noreferrer noopener"
           target="_blank"
         >
-          <figure>
-            <Image alt="Logo de HTML" height={60} loading="lazy" src="/icons/html.svg" width={60} />
+          <figure className="flex flex-col justify-center items-center">
+            <div className="relative w-[50px] h-[50px] sm:w-[60px] sm:h-[60px]">
+              <Image alt="Logo de HTML" layout="fill" loading="lazy" src="/icons/html.svg" />
+            </div>
             <figcaption>HTML</figcaption>
           </figure>
         </a>
@@ -76,8 +66,10 @@ const Techs = () => {
           rel="noreferrer noopener"
           target="_blank"
         >
-          <figure>
-            <Image alt="Logo de CSS" height={60} src="/icons/css.svg" width={60} />
+          <figure className="flex flex-col justify-center items-center">
+            <div className="relative w-[50px] h-[50px] sm:w-[60px] sm:h-[60px]">
+              <Image alt="Logo de CSS" layout="fill" src="/icons/css.svg" />
+            </div>
             <figcaption>CSS</figcaption>
           </figure>
         </a>
@@ -87,8 +79,10 @@ const Techs = () => {
           rel="noreferrer noopener"
           target="_blank"
         >
-          <figure>
-            <Image alt="Logo de Git" height={60} src="/icons/git.svg" width={60} />
+          <figure className="flex flex-col justify-center items-center">
+            <div className="relative w-[50px] h-[50px] sm:w-[60px] sm:h-[60px]">
+              <Image alt="Logo de Git" layout="fill" src="/icons/git.svg" />
+            </div>
             <figcaption>Git</figcaption>
           </figure>
         </a>

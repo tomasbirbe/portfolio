@@ -5,7 +5,7 @@ import { DownArrow } from '../../Icons';
 
 const Calculator = () => {
   return (
-    <section className="page" id="calculator">
+    <section className="page px-8" id="calculator">
       <article className="flex flex-row text-center md:gap-12 xl:gap-[8em] items-center justify-between">
         <div className="flex h-full flex-col gap-8 items-center justify-between">
           <h3>

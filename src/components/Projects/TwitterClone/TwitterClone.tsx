@@ -5,7 +5,7 @@ import { DownArrow } from '../../Icons';
 
 const Calculator = () => {
   return (
-    <section className="page" id="twitter-clone">
+    <section className="page px-8" id="twitter-clone">
       <article className="flex flex-row text-center md:gap-12 xl:gap-[8em] items-center justify-between">
         <Link href="https://tb-twitter.vercel.app/">
           <a className="hidden hover:scale-110 transition-all hover:shadow-xl hover: md:block md:w-[350px] md:h-[350px] lg:w-[500px] xl:w-[600px] relative">

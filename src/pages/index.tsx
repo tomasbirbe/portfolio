@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import Head from 'next/head';
 import dynamic from 'next/dynamic';
 import useToggle from 'hooks/useToggle';
+import Image from 'next/image';
 
 import styles from './Home.module.css';
 
@@ -41,7 +42,7 @@ export default function Home() {
         <link href="https://tb-twitter.vercel.app/" rel="preconnect" />
         <link href="https://fonts.gstatic.com" rel="preconnect" />
       </Head>
-      <div className="h-[100vh] flex-col relative flex">
+      <div className="h-[100vh] flex-col flex">
         <Nav />
         <main>
           <Intro />
@@ -54,11 +55,11 @@ export default function Home() {
           <Drawer isOpen={isOpen} onClose={onClose} />
           <button
             aria-label="Abrir el menu de navegacion"
-            className={styles.menuButton}
+            className="absolute lg:hidden top-[25px] left-[25px] hover:bg-independence rounded-full p-2 flex justify-center items-center transition-all duration-200"
             type="button"
             onClick={onOpen}
           >
-            <span className={styles.menu} />
+            <Image height={30} src="/icons/menu.svg" width={30} />
           </button>
         </main>
       </div>
