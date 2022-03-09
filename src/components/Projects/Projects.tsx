@@ -4,7 +4,7 @@ function Projects() {
   return (
     <section className="page gap-14" id="projects">
       <h2>Proyectos</h2>
-      <article className="flex flex-col w-[600px] text-center gap-8">
+      <article className="flex flex-col max-w-[600px] px-6 text-center gap-8">
         <span>
           Ahora que le diste un vistazo a algunas de las tecnologias con las que me siento comodo,
           me gustaria que veas algunas cosas que hice con estas herramientas (y otras más)

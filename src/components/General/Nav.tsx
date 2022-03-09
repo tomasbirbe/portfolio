@@ -1,9 +1,8 @@
-import styles from './Nav.module.css';
 import NavLink from './NavLink';
 
 const Nav = () => {
   return (
-    <nav className="hidden scroll-mt-4 lg:flex lg:sticky w-full outline outline-1	outline-rhythm h-[70px] px-4 z-[1] bg-raisin-black">
+    <nav className="hidden lg:flex lg:sticky w-full outline outline-1	outline-rhythm h-[70px] px-4 z-[1] bg-raisin-black">
       <ul className="flex flex-row gap-4 text-white w-full items-center">
         <NavLink aria-label="Ir a la seccion Introduccion" href="#intro">
           Introduccion

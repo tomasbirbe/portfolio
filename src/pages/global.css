@@ -3,6 +3,10 @@
 @tailwind components;
 @tailwind utilities;
 
+:root{
+  --height: 0px;
+}
+
 @layer base {
   html {
     @apply font-light;
@@ -27,11 +31,9 @@
     scroll-behavior: smooth;
     scroll-snap-type: y mandatory;
     overflow-y: scroll;
-    height: var(--height);
     color: white;
-  }
-  nav li{
-
+    scroll-padding-top:1em;
+    height: var(--mainHeight)
   }
 }
 
@@ -74,35 +76,6 @@
     text-align:center;
     @apply bg-raisin-black shadow-lg rounded-xl outline outline-1 outline-rhythm;
   }
-}
-
-:root{
-  /* Colors */
-  --raisin-black: #332E3C;
-  --rhythm: #877D9B;
-  --independence: #1D1A22;
-  --old-lavender: #69607D;
-
-  /* Font weights */
-  --light: 300;
-  --regular: 400;
-  --medium: 500;
-  --bold: 700;
-  --black: 900;
-
-  /* Font sizes */
-  --title: 1.875em;
-  --subtitle: 1.5em;
-
-  /* Media queries sizes */
-
-  --sm: 480px;
-  --md: 768px;
-  --lg: 1024px;
-  --xl: 1200px;
-
-  /* Height */
-  --height: 0px;
 }
 
 *, *::before, *::after {

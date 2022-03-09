@@ -3,8 +3,6 @@ import Link from 'next/link';
 
 import { UpArrow } from '../Icons';
 
-import styles from './Contact.module.css';
-
 const Contact = () => {
   return (
     <section className="page gap-8" id="contact">

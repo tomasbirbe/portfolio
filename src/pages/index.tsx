@@ -21,7 +21,11 @@ export default function Home() {
   useEffect(() => {
     const vh = window.innerHeight;
 
-    document.documentElement.style.setProperty('--height', vh + 'px');
+    if (window.innerWidth >= 1024) {
+      document.documentElement.style.setProperty('--mainHeight', vh - 73 + 'px');
+    } else {
+      document.documentElement.style.setProperty('--mainHeight', vh + 'px');
+    }
   }, []);
 
   return (
@@ -48,7 +52,7 @@ export default function Home() {
         <link href="https://fonts.gstatic.com" rel="preconnect" />
       </Head>
       <Nav />
-      <main className={`${styles.container}`}>
+      <main>
         <Intro />
         <About />
         <Techs />
