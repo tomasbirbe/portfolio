@@ -11,11 +11,7 @@ const useToggle = () => {
     setToggle(false);
   }
 
-  function isOpen() {
-    return toggle;
-  }
-
-  return { onOpen, onClose, isOpen };
+  return { onOpen, onClose, isOpen: toggle };
 };
 
 export default useToggle;

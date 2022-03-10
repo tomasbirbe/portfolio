@@ -1,32 +1,81 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
 :root{
-  /* Colors */
-  --raisin-black: #332E3C;
-  --rhythm: #877D9B;
-  --independence: #1D1A22;
-  --old-lavender: #69607D;
-
-  /* Font weights */
-  --light: 300;
-  --regular: 400;
-  --medium: 500;
-  --bold: 700;
-  --black: 900;
-
-  /* Font sizes */
-  --title: 1.875em;
-  --subtitle: 1.5em;
-
-  /* Media queries sizes */
-
-  --sm: 480px;
-  --md: 768px;
-  --lg: 1024px;
-  --xl: 1200px;
-
-  /* Height */
   --height: 0px;
+}
+
+@layer base {
+  html {
+    @apply font-light;
+    @apply bg-raisin-black;
+  } 
+  h2 {
+    @apply font-black text-3xl;
+  }
+  h3 {
+    @apply font-bold text-3xl;
+  }
+  figure {
+    @apply flex flex-col justify-center content-center text-center gap-2;
+  }
+  a {
+    @apply inline-block h-min;
+  }
+  #__next{
+    height: 100%;
+  }
+  main{
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    color: white;
+    height: 100%;
+    position: relative;
+  }
+}
+
+@layer components{
+  .page{
+    position: relative;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction: column;
+    height:100%;
+  }
+
+  a:hover > .overlay-subnav {
+    display:block;
+  }
+
+  .overlay-subnav{
+    display:none;
+    background: transparent;
+    position:absolute;
+    top:100%;
+    left:-7%;
+    padding-block-start:1em;
+  }
+
+  a:hover > .overlay-subnav > .subnav {
+    display:flex;
+    opacity:1;
+    color:white;
+  }
+  .subnav{
+    display:none;
+    transition: all 150ms ease-in-out;
+    opacity:0;
+    flex-direction:column;
+    gap:0.5em;
+    align-items:center;
+    justify-content:flex-start;
+    text-align:center;
+    @apply bg-raisin-black shadow-lg rounded-xl outline outline-1 outline-rhythm;
+  }
 }
 
 *, *::before, *::after {
@@ -36,7 +85,7 @@
 * {
   margin: 0;
   font-family: 'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-weight: var(--regular);
+  /* font-weight: var(--light); */
 }
 
 html, body {
@@ -94,9 +143,3 @@ a:visited{
 ::-webkit-scrollbar-thumb:hover{
   background: var(--old-lavender);
 }
-/* 
-@media screen and (min-width: 1024px){
-  html{
-    font-size: 1.2em;
-  }
-} */

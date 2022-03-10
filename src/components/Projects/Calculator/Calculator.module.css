@@ -1,9 +1,0 @@
-.article{
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  gap: 4em;
-  border-radius: 15px;
-  padding-inline: 2em;
-  width: 100%;
-}

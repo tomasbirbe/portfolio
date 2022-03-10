@@ -6,4 +6,7 @@ module.exports = {
     defaultLocale: 'en-US',
   },
   swcMinify: true,
+  images: {
+    deviceSizes: [480, 768, 1024, 1200],
+  },
 };

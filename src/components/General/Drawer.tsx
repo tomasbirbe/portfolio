@@ -1,114 +1,100 @@
-import { useState } from 'react';
-import styles from './Drawer.module.css';
+import Image from 'next/image';
+import Link from 'next/link';
+
+import DrawerLink from './DrawerLink';
 
 const Drawer = ({ isOpen, onClose }: { isOpen: any; onClose: any }) => {
   return (
     <div
-      className={`${styles.drawer}  ${
-        isOpen() ? styles.drawerOpen : styles.drawerClose
+      className={`flex w-full max-w-[500px] left-[-500px] shadow-xl h-full flex-col bg-raisin-black gap-4 pt-10 absolute z-[2] top-[0] transition-all duration-500 ${
+        isOpen ? 'visible translate-x-[500px]' : 'invisible'
       }`}
     >
-      <ul className={styles.links}>
-        <li onClick={onClose}>
-          <a
-            href="#intro"
-            className={styles.link}
-            aria-label="Ir a la seccion Introduccion"
+      <ul className="flex flex-col gap-6 pl-8">
+        <DrawerLink aria-label="Ir a la seccion Introduccion" href="#intro" onClick={onClose}>
+          Introduccion
+        </DrawerLink>
+        <DrawerLink aria-label="Ir a la seccion Sobre Mi" href="#about-me" onClick={onClose}>
+          Sobre mi
+        </DrawerLink>
+        <DrawerLink aria-label="Ir a la seccion Tecnologias" href="#techs" onClick={onClose}>
+          Tecnologias
+        </DrawerLink>
+        <DrawerLink aria-label="Ir a la seccion Proyectos" href="#projects" onClick={onClose}>
+          Proyectos
+        </DrawerLink>
+        <ul className="flex flex-col gap-6 pl-8">
+          <DrawerLink
+            aria-label="Ir a la seccion Proyectos: Twitter Clone"
+            href="#twitter-clone"
+            onClick={onClose}
           >
-            Introduccion
-          </a>
-        </li>
-        <li onClick={onClose}>
-          <a
-            href="#about-me"
-            className={styles.link}
-            aria-label="Ir a la seccion Sobre Mi"
+            Twitter Clone
+          </DrawerLink>
+          <DrawerLink
+            aria-label="Ir a la seccion Proyectos: Calculadora"
+            href="#calculator"
+            onClick={onClose}
           >
-            Sobre mi
-          </a>
-        </li>
-        <li onClick={onClose}>
-          <a
-            href="#techs"
-            className={styles.link}
-            aria-label="Ir a la seccion Tecnologias"
-          >
-            Tecnologias
-          </a>
-        </li>
-        <li onClick={onClose}>
-          <a
-            href="#projects"
-            className={styles.link}
-            aria-label="Ir a la seccion Proyectos"
-          >
-            Proyectos
-          </a>
-          <ul className={styles.links}>
-            <li onClick={onClose}>
-              <a
-                href="#twitter-clone"
-                aria-label="Ir a la seccion Proyectos: Twitter Clone"
-              >
-                Twitter Clone
-              </a>
-            </li>
-            <li onClick={onClose}>
-              <a
-                href="#calculator"
-                aria-label="Ir a la seccion Proyectos: Calculadora"
-              >
-                Calculadora
-              </a>
-            </li>
-          </ul>
-        </li>
-        <li onClick={onClose}>
-          <a href="#contact" aria-label="Ir a la seccion Contacto">
-            Contacto
-          </a>
-        </li>
+            Calculadora
+          </DrawerLink>
+        </ul>
+        <DrawerLink aria-label="Ir a la seccion Contacto" href="#contact" onClick={onClose}>
+          Contacto
+        </DrawerLink>
       </ul>
-      <div className={styles.divider} />
-      <div className={styles.icons}>
-        <a
-          href="mailto: tomas.birbe@gmail.com"
-          aria-label="Enviar un correo a tomas.birbe@gmail.com"
-          rel="noreferrer noopener"
-        >
-          <img className={styles.email} src="icons/email.svg" alt="" />
-        </a>
-        <a
-          href="https://www.linkedin.com/in/tomas-birbe/"
-          target="_blank"
-          rel="noreferrer noopener"
-          aria-label="Ir al perfil de LinkedIn de Tomas Birbe"
-        >
-          <img
-            className={styles.linkedin}
-            src="icons/white-linkedin.svg"
-            alt=""
-          />
-        </a>
-        <a
-          href="https://github.com/tomasbirbe"
-          target="_blank"
-          rel="noreferrer noopener"
-          aria-label="Ir al perfil de GitHub de Tomas Birbe"
-        >
-          <img
-            className={styles.github}
-            src="icons/github.svg"
-            alt="Logo de GitHub"
-          />
-        </a>
+      <div />
+      <div className="flex gap-16 w-full justify-center items-center">
+        <Link href="mailto: tomas.birbe@gmail.com">
+          <a aria-label="Enviar un correo a tomas.birbe@gmail.com" rel="noreferrer noopener">
+            <Image
+              alt="A letter icon"
+              height={50}
+              loading="lazy"
+              src="/icons/email.svg"
+              width={50}
+            />
+          </a>
+        </Link>
+        <Link href="https://www.linkedin.com/in/tomas-birbe/">
+          <a
+            aria-label="Ir al perfil de LinkedIn de Tomas Birbe"
+            rel="noreferrer noopener"
+            target="_blank"
+          >
+            <Image
+              alt="A LinkedIn icon"
+              height={50}
+              loading="lazy"
+              src="/icons/white-linkedin.svg"
+              width={50}
+            />
+          </a>
+        </Link>
+        <Link href="https://github.com/tomasbirbe">
+          <a
+            aria-label="Ir al perfil de GitHub de Tomas Birbe"
+            rel="noreferrer noopener"
+            target="_blank"
+          >
+            <Image
+              alt="A letter icon"
+              height={55}
+              loading="lazy"
+              src="/icons/github.svg"
+              width={55}
+            />
+          </a>
+        </Link>
       </div>
       <button
-        className={styles.backButton}
-        onClick={onClose}
         aria-label="Cerrar menu de navegacion"
+        className="absolute top-[30px] right-[30px] hover:cursor-pointer"
+        onClick={onClose}
       >
-        <img src="icons/back.svg" alt="" className={styles.back} />
+        <div className="w-[30px] h-[30px] relative">
+          <Image alt="" layout="fill" src="/icons/back.svg" />
+        </div>
       </button>
     </div>
   );
