@@ -25,6 +25,20 @@ const Drawer = ({ isOpen, onClose }: { isOpen: any; onClose: any }) => {
         </DrawerLink>
         <ul className="flex flex-col gap-6 pl-8">
           <DrawerLink
+            aria-label="Ir a la seccion Proyectos: Blommy"
+            href="#blommy"
+            onClick={onClose}
+          >
+            Blommy
+          </DrawerLink>
+          <DrawerLink
+            aria-label="Ir a la seccion Proyectos: Small Keeper"
+            href="#small-keeper"
+            onClick={onClose}
+          >
+            Small Keeper
+          </DrawerLink>
+          <DrawerLink
             aria-label="Ir a la seccion Proyectos: Twitter Clone"
             href="#twitter-clone"
             onClick={onClose}

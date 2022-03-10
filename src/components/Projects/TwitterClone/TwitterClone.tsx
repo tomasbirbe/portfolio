@@ -7,20 +7,6 @@ const Calculator = () => {
   return (
     <section className="page px-8" id="twitter-clone">
       <article className="flex flex-row text-center md:gap-12 xl:gap-[8em] items-center justify-between">
-        <Link href="https://tb-twitter.vercel.app/">
-          <a
-            className="hidden hover:scale-110 transition-all hover:shadow-xl hover: md:block md:w-[350px] md:h-[350px] lg:w-[500px] xl:w-[600px] relative"
-            rel="noreferrer noopener"
-            target="_blank"
-          >
-            <Image
-              alt="An image preview of Twitter Clone App"
-              className="object-cover rounded-2xl w-[200px]"
-              layout="fill"
-              src="/twitter-clone.webp"
-            />
-          </a>
-        </Link>
         <div className="flex h-full flex-col gap-8 items-center justify-between">
           <h3>
             <Link href="https://tb-twitter.vercel.app/">
@@ -71,6 +57,21 @@ const Calculator = () => {
             />
           </div>
         </div>
+        <Link href="https://tb-twitter.vercel.app/">
+          <a
+            className="hidden hover:scale-110 transition-all hover:shadow-xl hover: md:block md:w-[350px] md:h-[350px] lg:w-[500px] xl:w-[600px] relative"
+            rel="noreferrer noopener"
+            target="_blank"
+          >
+            <Image
+              alt="Vista previa del proyecto Twitter Clone App"
+              className="object-cover rounded-2xl w-[200px]"
+              layout="fill"
+              loading="lazy"
+              src="/twitter-clone.webp"
+            />
+          </a>
+        </Link>
       </article>
       <DownArrow href="#calculator" />
     </section>

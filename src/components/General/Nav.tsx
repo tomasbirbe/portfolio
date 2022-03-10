@@ -17,6 +17,12 @@ const Nav = () => {
           Proyectos
           <div className="overlay-subnav">
             <ul className="subnav">
+              <NavLink aria-label="Ir a la seccion Proyectos: Blommy" href="#blommy">
+                Blommy
+              </NavLink>
+              <NavLink aria-label="Ir a la seccion Proyectos: Small Keeper" href="#small-keeper">
+                Small Keeper
+              </NavLink>
               <NavLink aria-label="Ir a la seccion Proyectos: Twitter Clone" href="#twitter-clone">
                 Twitter Clone
               </NavLink>

@@ -36,7 +36,6 @@
     overflow-y: scroll;
     color: white;
     height: 100%;
-    position: relative;
   }
 }
 
@@ -48,6 +47,11 @@
     align-items:center;
     flex-direction: column;
     height:100%;
+  }
+
+  .subnav > * {
+    width:100%;
+    bg:red;
   }
 
   a:hover > .overlay-subnav {
