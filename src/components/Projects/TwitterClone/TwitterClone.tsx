@@ -17,7 +17,6 @@ const Calculator = () => {
               alt="An image preview of Twitter Clone App"
               className="object-cover rounded-2xl w-[200px]"
               layout="fill"
-              loading="lazy"
               src="/twitter-clone.webp"
             />
           </a>
