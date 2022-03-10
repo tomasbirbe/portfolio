@@ -49,6 +49,11 @@
     height:100%;
   }
 
+  .subnav > * {
+    width:100%;
+    bg:red;
+  }
+
   a:hover > .overlay-subnav {
     display:block;
   }
