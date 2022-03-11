@@ -24,7 +24,7 @@ const Blommy = () => {
             Este proyecto es mi blog personal en donde voy publicando mi aprendizaje, herramientas y
             recursos. Pude poner en practica NextJS y ChakraUI con todas sus funcionalidades
           </div>
-          <div className="flex gap-3 flex-wrap w-[150px]">
+          <div className="flex gap-3 flex-wrap w-[180px]">
             <Image
               alt="Logo de ChakraUI"
               height={40}
@@ -59,7 +59,7 @@ const Blommy = () => {
         </div>
         <Link href="https://tb-blog.vercel.app/">
           <a
-            className="hidden hover:scale-110 transition-all hover:shadow-xl hover: md:block md:w-[350px] md:h-[350px] lg:w-[500px] xl:w-[800px] xl:h-[500px]  relative"
+            className="hidden hover:scale-110 transition-all hover:shadow-xl hover: md:block md:w-[350px] md:h-[350px] lg:w-[600px] xl:w-[800px] xl:h-[500px]  relative"
             rel="noreferrer noopener"
             target="_blank"
           >

@@ -4,6 +4,7 @@ import useToggle from 'hooks/useToggle';
 import Image from 'next/image';
 import Blommy from 'components/Projects/Blommy/Blommy';
 import SmallKeeper from 'components/Projects/SmallKeeper/SmallKeeper';
+import { useEffect } from 'react';
 
 const Intro = dynamic(() => import('components/Intro/Intro'));
 const About = dynamic(() => import('components/About/About'));
@@ -17,6 +18,12 @@ const Nav = dynamic(() => import('components/General/Nav'));
 
 export default function Home() {
   const { onOpen, onClose, isOpen } = useToggle();
+
+  useEffect(() => {
+    const vh = window.innerHeight;
+
+    document.documentElement.style.setProperty('--maxHeight', vh + 'px');
+  }, []);
 
   return (
     <>
@@ -41,7 +48,7 @@ export default function Home() {
         <link href="https://tb-twitter.vercel.app/" rel="preconnect" />
         <link href="https://fonts.gstatic.com" rel="preconnect" />
       </Head>
-      <div className="h-[100vh] flex-col flex">
+      <div className="h-[var(--maxHeight)] flex-col flex" id="mainContainer">
         <Nav />
         <main>
           <Intro />
