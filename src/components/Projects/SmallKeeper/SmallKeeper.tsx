@@ -6,22 +6,7 @@ import { DownArrow } from '../../Icons';
 const SmallKeeper = () => {
   return (
     <section className="page px-8" id="small-keeper">
-      <article className="flex flex-row text-center md:gap-12 xl:gap-[8em] items-center justify-between">
-        <Link href="https://tb-small-keeper.vercel.app/">
-          <a
-            className="hidden hover:scale-110 transition-all hover:shadow-xl hover: md:block md:w-[350px] md:h-[350px] lg:w-[500px] xl:w-[600px] relative"
-            rel="noreferrer noopener"
-            target="_blank"
-          >
-            <Image
-              alt="Vista previa del proyecto Small Keeper"
-              className="object-cover rounded-2xl w-[200px]"
-              layout="fill"
-              loading="lazy"
-              src="/small-keeper.webp"
-            />
-          </a>
-        </Link>
+      <article className="flex flex-row-reverse text-center md:gap-12 xl:gap-[8em] items-center justify-between">
         <div className="flex h-full flex-col gap-8 items-center justify-between">
           <h3>
             <Link href="https://tb-small-keeper.vercel.app/">
@@ -72,6 +57,21 @@ const SmallKeeper = () => {
             />
           </div>
         </div>
+        <Link href="https://tb-small-keeper.vercel.app/">
+          <a
+            className="hidden hover:scale-110 transition-all hover:shadow-xl hover: md:block md:w-[350px] md:h-[350px] lg:w-[500px] xl:w-[800px] xl:h-[500px]  relative"
+            rel="noreferrer noopener"
+            target="_blank"
+          >
+            <Image
+              alt="Vista previa del proyecto Small Keeper"
+              className="object-cover rounded-2xl"
+              layout="fill"
+              loading="lazy"
+              src="/small-keeper.webp"
+            />
+          </a>
+        </Link>
       </article>
       <DownArrow href="#twitter-clone" />
     </section>

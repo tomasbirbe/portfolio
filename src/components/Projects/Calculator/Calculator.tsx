@@ -60,13 +60,13 @@ const Calculator = () => {
         </div>
         <Link href="https://tb-calculator.vercel.app/">
           <a
-            className="hidden hover:scale-110 transition-all hover:shadow-xl hover: md:block md:w-[350px] md:h-[350px] lg:w-[500px] xl:w-[600px] relative"
+            className="hidden hover:scale-110 transition-all hover:shadow-xl hover: md:block md:w-[350px] md:h-[350px] lg:w-[500px] xl:w-[800px] xl:h-[500px] relative"
             rel="noreferrer noopener"
             target="_blank"
           >
             <Image
               alt="Vista previa del proyecto Calculator App"
-              className="object-cover rounded-2xl w-[200px]"
+              className="object-cover rounded-2xl"
               layout="fill"
               loading="lazy"
               src="/calculadora.webp"

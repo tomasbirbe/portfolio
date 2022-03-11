@@ -9,7 +9,7 @@ export default function Intro() {
       className="page gap-12 pb-[2em] lg:gap-14 lg:flex-row-reverse lg:justify-around"
       id="intro"
     >
-      <div className="w-[150px] lg:w-[300px]">
+      <div className="w-[150px] lg:w-[300px] xl:w-[450px]">
         <Image
           priority
           alt="A profile pic of me!"
