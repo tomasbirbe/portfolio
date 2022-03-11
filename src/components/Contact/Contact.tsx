@@ -15,7 +15,7 @@ const Contact = () => {
           algunos medios para que puedas contactarme
         </span>
       </article>
-      <article className="hidden md:flex md:gap-8 pl-2">
+      <article className="flex gap-8 pl-2">
         <Link href="mailto: tomas.birbe@gmail.com">
           <a aria-label="Enviar un correo a tomas.birbe@gmail.com" rel="noreferrer noopener">
             <Image
