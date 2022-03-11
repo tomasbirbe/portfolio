@@ -9,9 +9,9 @@ const Blommy = () => {
       <article className="flex flex-row text-center md:gap-12 xl:gap-[8em] items-center justify-between">
         <div className="flex h-full flex-col gap-8 items-center justify-between">
           <h3>
-            <Link href="https://tb-twitter.vercel.app/">
+            <Link href="https://tb-blog.vercel.app/">
               <a
-                aria-label="Ir al proyecto Calculadora"
+                aria-label="Ir al proyecto Blommy"
                 className="hover:bg-white hover:text-black p-2 rounded transition-all"
                 rel="noreferrer noopener"
                 target="_blank"
@@ -57,14 +57,14 @@ const Blommy = () => {
             />
           </div>
         </div>
-        <Link href="https://tb-twitter.vercel.app/">
+        <Link href="https://tb-blog.vercel.app/">
           <a
             className="hidden hover:scale-110 transition-all hover:shadow-xl hover: md:block md:w-[350px] md:h-[350px] lg:w-[500px] xl:w-[600px] relative"
             rel="noreferrer noopener"
             target="_blank"
           >
             <Image
-              alt="An image preview of Twitter Clone App"
+              alt="Vista previa del proyecto Blommy"
               className="object-cover rounded-2xl w-[200px]"
               layout="fill"
               loading="lazy"
@@ -73,7 +73,7 @@ const Blommy = () => {
           </a>
         </Link>
       </article>
-      <DownArrow href="#twitter-clone" />
+      <DownArrow href="#small-keeper" />
     </section>
   );
 };
