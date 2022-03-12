@@ -1,28 +1,43 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
-import { DownArrow } from '../../Icons';
+import { DownArrow } from '../Icons';
 
-const Calculator = () => {
+const SmallKeeper = () => {
   return (
-    <section className="page px-8" id="twitter-clone">
+    <section className="page px-8" id="small-keeper">
       <article className="flex flex-row text-center md:gap-12 xl:gap-[8em] items-center justify-between">
+        <Link href="https://tb-small-keeper.vercel.app/">
+          <a
+            className="hidden hover:scale-110 transition-all hover:shadow-xl hover: md:block md:w-[350px] md:h-[350px] lg:w-[500px] xl:w-[600px] relative"
+            rel="noreferrer noopener"
+            target="_blank"
+          >
+            <Image
+              alt="Vista previa del proyecto Small Keeper"
+              className="object-cover rounded-2xl w-[200px]"
+              layout="fill"
+              loading="lazy"
+              src="/small-keeper.webp"
+            />
+          </a>
+        </Link>
         <div className="flex h-full flex-col gap-8 items-center justify-between">
           <h3>
-            <Link href="https://tb-twitter.vercel.app/">
+            <Link href="https://tb-small-keeper.vercel.app/">
               <a
-                aria-label="Ir al proyecto Calculadora"
+                aria-label="Ir al proyecto Small-Keeper"
                 className="hover:bg-white hover:text-black p-2 rounded transition-all"
                 rel="noreferrer noopener"
                 target="_blank"
               >
-                Twitter clone
+                Small Keeper
               </a>
             </Link>
           </h3>
           <div className="max-w-[370px] min-w-[250px]">
-            Este proyecto es un clon de la UI de Twitter y lo hice con el objetivo de poner en
-            practica mis habilidades de maquetacion con ChakraUI y la implementacion de Responsive.
+            Este proyecto es un gestor de claves en donde podes guardar todas las claves que
+            quieras. Utiliza IndexDB a modo de demostracion.
           </div>
           <div className="flex gap-3 flex-wrap w-[150px]">
             <Image
@@ -57,25 +72,10 @@ const Calculator = () => {
             />
           </div>
         </div>
-        <Link href="https://tb-twitter.vercel.app/">
-          <a
-            className="hidden hover:scale-110 transition-all hover:shadow-xl hover: md:block md:w-[350px] md:h-[350px] lg:w-[500px] xl:w-[600px] relative"
-            rel="noreferrer noopener"
-            target="_blank"
-          >
-            <Image
-              alt="Vista previa del proyecto Twitter Clone App"
-              className="object-cover rounded-2xl w-[200px]"
-              layout="fill"
-              loading="lazy"
-              src="/twitter-clone.webp"
-            />
-          </a>
-        </Link>
       </article>
-      <DownArrow href="#calculator" />
+      <DownArrow href="#twitter-clone" />
     </section>
   );
 };
 
-export default Calculator;
+export default SmallKeeper;

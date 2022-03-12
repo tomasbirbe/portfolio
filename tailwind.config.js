@@ -13,6 +13,7 @@ module.exports = {
         rhythm: '#877D9B',
         independence: '#1D1A22',
         'old-lavender': '#69607D',
+        'font-primary': '#E1DEE6',
       },
     },
   },

@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 
-import { DownArrow } from '../Icons';
+import { DownArrow } from './Icons';
 
 const Techs = () => {
   return (

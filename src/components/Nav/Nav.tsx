@@ -1,9 +1,13 @@
+import { useLang } from 'context/langContext';
+
 import NavLink from './NavLink';
 
 const Nav = () => {
+  const [, setLang] = useLang();
+
   return (
-    <nav className="hidden lg:flex lg:sticky w-full outline outline-1	outline-rhythm h-[70px] px-4 z-[1] bg-raisin-black">
-      <ul className="flex flex-row gap-4 text-white w-full items-center">
+    <nav className="hidden font-light lg:flex lg:justify-around lg:items-center lg:sticky w-full outline outline-1	outline-rhythm h-[70px] px-4 z-[1] bg-raisin-black">
+      <ul className="flex flex-row gap-4 w-full items-center">
         <NavLink aria-label="Ir a la seccion Introduccion" href="#intro">
           Introduccion
         </NavLink>
@@ -36,6 +40,14 @@ const Nav = () => {
           Contacto
         </NavLink>
       </ul>
+      <select
+        className="h-fit w-[150px] px-2 text-left py-2 bg-transparent border-[1px] border-font-primary rounded-xl"
+        defaultValue="en"
+        onChange={(e) => setLang(e.target.value)}
+      >
+        <option value="en">English</option>
+        <option value="es">Español</option>
+      </select>
     </nav>
   );
 };

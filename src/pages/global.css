@@ -9,9 +9,8 @@
 
 @layer base {
   html {
-    @apply font-light;
     @apply bg-raisin-black;
-  } 
+    } 
   h1 {
     @apply font-black text-5xl;
   }
@@ -27,14 +26,24 @@
   a {
     @apply inline-block h-min;
   }
+
+  select{
+    @apply text-font-primary;
+  }
+
+  option{
+    color: black;
+  }
+
   #__next{
     height: 100%;
   }
   main{
     scroll-behavior: smooth;
     scroll-snap-type: y mandatory;
+    @apply font-light;
     overflow-y: scroll;
-    color: white;
+    @apply text-font-primary;
     height: 100%;
   }
 }

@@ -1,9 +1,29 @@
+import { useLang } from 'context/langContext';
 import Image from 'next/image';
 import Link from 'next/link';
+import { useEffect, useState } from 'react';
+import { api } from 'services/api';
 
-import { DownArrow } from '../Icons';
+import { DownArrow } from './Icons';
+
+interface Data {
+  title: string;
+  subtitle: string;
+}
+
+const INITIAL_DATA: Data = {
+  title: 'Tomas Birbe',
+  subtitle: 'Frontend React Developer',
+};
 
 export default function Intro() {
+  const [lang] = useLang();
+  const [data, setData] = useState<Data>(INITIAL_DATA);
+
+  useEffect(() => {
+    setData(api.get.intro(lang));
+  }, [lang]);
+
   return (
     <section
       className="page gap-12 pb-[2em] lg:gap-14 lg:flex-row-reverse lg:justify-around"
@@ -20,10 +40,10 @@ export default function Intro() {
           width={300}
         />
       </div>
-      <div className="flex flex-col items-center gap-4 lg:gap-8">
-        <div className="flex flex-col items-center justify-center gap-2">
-          <h1>Tomás Birbe</h1>
-          <p className="text-center text-xl">Desarrollador Front-End React</p>
+      <div className="flex flex-col items-center gap-4 lg:items-start">
+        <div className="flex flex-col items-start justify-center gap-2">
+          <h1>{data.title}</h1>
+          <p className="text-center text-xl">{data.subtitle}</p>
         </div>
         <div className="hidden lg:flex lg:gap-8">
           <Link href="mailto: tomas.birbe@gmail.com">

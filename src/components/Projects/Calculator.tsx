@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
-import { DownArrow } from '../../Icons';
+import { DownArrow } from '../Icons';
 
 const Calculator = () => {
   return (

@@ -1,4 +1,4 @@
-import { DownArrow } from '../Icons';
+import { DownArrow } from './Icons';
 
 export default function About() {
   return (
