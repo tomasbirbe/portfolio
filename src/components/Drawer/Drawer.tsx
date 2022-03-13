@@ -1,9 +1,45 @@
+import { useLang } from 'context/langContext';
 import Image from 'next/image';
 import Link from 'next/link';
+import { useState, useEffect } from 'react';
+import { api } from 'services/api';
 
 import DrawerLink from './DrawerLink';
 
+interface Data {
+  intro: string;
+  aboutMe: string;
+  technologies: string;
+  projects: {
+    title: string;
+    blommy: string;
+    smallKeeper: string;
+    twitterClone: string;
+  };
+  contact: string;
+}
+
+const INITIAL_DATA: Data = {
+  intro: '',
+  aboutMe: '',
+  technologies: '',
+  projects: {
+    title: '',
+    blommy: '',
+    smallKeeper: '',
+    twitterClone: '',
+  },
+  contact: '',
+};
+
 const Drawer = ({ isOpen, onClose }: { isOpen: any; onClose: any }) => {
+  const [lang] = useLang();
+  const [data, setData] = useState<Data>(INITIAL_DATA);
+
+  useEffect(() => {
+    setData(api.get.nav(lang));
+  }, [lang]);
+
   return (
     <div
       className={`flex w-full max-w-[500px] left-[-500px] shadow-xl h-full flex-col bg-raisin-black gap-4 pt-10 absolute z-[2] top-[0] transition-all duration-300 ${
@@ -12,16 +48,16 @@ const Drawer = ({ isOpen, onClose }: { isOpen: any; onClose: any }) => {
     >
       <ul className="flex flex-col gap-6 pl-8">
         <DrawerLink aria-label="Ir a la seccion Introduccion" href="#intro" onClick={onClose}>
-          Introduccion
+          {data.intro}
         </DrawerLink>
         <DrawerLink aria-label="Ir a la seccion Sobre Mi" href="#about-me" onClick={onClose}>
-          Sobre mi
+          {data.aboutMe}
         </DrawerLink>
         <DrawerLink aria-label="Ir a la seccion Tecnologias" href="#techs" onClick={onClose}>
-          Tecnologias
+          {data.technologies}
         </DrawerLink>
         <DrawerLink aria-label="Ir a la seccion Proyectos" href="#projects" onClick={onClose}>
-          Proyectos
+          {data.projects.title}
         </DrawerLink>
         <ul className="flex flex-col gap-6 pl-8">
           <DrawerLink
@@ -29,32 +65,25 @@ const Drawer = ({ isOpen, onClose }: { isOpen: any; onClose: any }) => {
             href="#blommy"
             onClick={onClose}
           >
-            Blommy
+            {data.projects.blommy}
           </DrawerLink>
           <DrawerLink
             aria-label="Ir a la seccion Proyectos: Small Keeper"
             href="#small-keeper"
             onClick={onClose}
           >
-            Small Keeper
+            {data.projects.smallKeeper}
           </DrawerLink>
           <DrawerLink
             aria-label="Ir a la seccion Proyectos: Twitter Clone"
             href="#twitter-clone"
             onClick={onClose}
           >
-            Twitter Clone
-          </DrawerLink>
-          <DrawerLink
-            aria-label="Ir a la seccion Proyectos: Calculadora"
-            href="#calculator"
-            onClick={onClose}
-          >
-            Calculadora
+            {data.projects.twitterClone}
           </DrawerLink>
         </ul>
         <DrawerLink aria-label="Ir a la seccion Contacto" href="#contact" onClick={onClose}>
-          Contacto
+          {data.contact}
         </DrawerLink>
       </ul>
       <div />

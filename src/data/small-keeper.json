@@ -1,0 +1,10 @@
+{
+  "en":{
+    "title": "Small Keeper",
+    "about": "This project is a password manager where you can store all the keys you want. It uses IndexDB as a demostration."
+  },
+  "es":{
+    "title": "Small Keeper",
+    "about":"Este proyecto es un gestor de claves en donde podes guardar todas las claves que quieras. Utiliza IndexDB a modo de demostracion."
+  }
+}

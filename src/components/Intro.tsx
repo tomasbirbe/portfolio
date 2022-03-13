@@ -1,14 +1,42 @@
+import { useLang } from 'context/langContext';
 import Image from 'next/image';
 import Link from 'next/link';
+import { useEffect, useState } from 'react';
+import { api } from 'services/api';
 
-import { DownArrow } from '../Icons';
+import { DownArrow } from './Icons';
+
+interface Data {
+  title: string;
+  subtitle: string;
+}
+
+const INITIAL_DATA: Data = {
+  title: 'Tomas Birbe',
+  subtitle: 'Frontend React Developer',
+};
 
 export default function Intro() {
+  const [lang, setLang] = useLang();
+  const [data, setData] = useState<Data>(INITIAL_DATA);
+
+  useEffect(() => {
+    setData(api.get.intro(lang));
+  }, [lang]);
+
   return (
     <section
-      className="page gap-12 pb-[2em] lg:gap-14 lg:flex-row-reverse lg:justify-around"
+      className="page gap-6 pb-[2em] lg:gap-14 lg:flex-row-reverse lg:justify-around"
       id="intro"
     >
+      <select
+        className="h-fit w-[150px] top-[30px] right-[15px] lg:hidden absolute px-2 text-left py-2 bg-transparent border-[1px] border-font-primary rounded-xl"
+        defaultValue="en"
+        onChange={(e) => setLang(e.target.value)}
+      >
+        <option value="en">English</option>
+        <option value="es">Español</option>
+      </select>
       <div className="w-[150px] lg:w-[300px]">
         <Image
           priority
@@ -20,12 +48,12 @@ export default function Intro() {
           width={300}
         />
       </div>
-      <div className="flex flex-col items-center gap-4 lg:gap-8">
-        <div className="flex flex-col items-center justify-center gap-2">
-          <h1>Tomás Birbe</h1>
-          <p className="text-center text-xl">Desarrollador Front-End React</p>
+      <div className="flex flex-col items-center lg:items-start gap-4">
+        <div className="flex flex-col items-center lg:items-start justify-center gap-2">
+          <h1>{data.title}</h1>
+          <p className="text-center text-xl">{data.subtitle}</p>
         </div>
-        <div className="hidden lg:flex lg:gap-8">
+        <div className="hidden lg:flex lg:gap-8 items-center">
           <Link href="mailto: tomas.birbe@gmail.com">
             <a aria-label="Enviar un correo a tomas.birbe@gmail.com" rel="noreferrer noopener">
               <Image

@@ -1,0 +1,10 @@
+{
+  "en":{
+    "title": "Blommy",
+    "about": "This project is my personal blog where I publish my learning, tools and resources. I could put in practice NextJS and ChakraUI with all its functionalities"
+  },
+  "es":{
+    "title": "Blommy",
+    "about":"Este proyecto es mi blog personal en donde voy publicando mi aprendizaje, herramientas y recursos. Pude poner en practica NextJS y ChakraUI con todas sus funcionalidades"
+  }
+}

@@ -1,12 +1,29 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Image from 'next/image';
+import { useLang } from 'context/langContext';
+import { api } from 'services/api';
 
-import { DownArrow } from '../Icons';
+import { DownArrow } from './Icons';
+
+interface Data {
+  title: string;
+}
+
+const INITIAL_DATA: Data = {
+  title: '',
+};
 
 const Techs = () => {
+  const [lang] = useLang();
+  const [data, setData] = useState<Data>(INITIAL_DATA);
+
+  useEffect(() => {
+    setData(api.get.techs(lang));
+  }, [lang]);
+
   return (
     <section className="page pb-[4em] gap-[3em]" id="techs">
-      <h2>Tecnologias</h2>
+      <h2>{data.title}</h2>
       <article className="grid grid-cols-2 sm:grid-cols-3 content-center gap-y-10 sm:gap-y-16 gap-x-6">
         <a
           aria-label="Ir a la documentacion de TypeScript"
