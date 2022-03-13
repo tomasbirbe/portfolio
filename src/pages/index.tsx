@@ -2,14 +2,9 @@ import Head from 'next/head';
 import dynamic from 'next/dynamic';
 import useToggle from 'hooks/useToggle';
 import Image from 'next/image';
-<<<<<<< HEAD
 import Blommy from 'components/Projects/Blommy';
 import SmallKeeper from 'components/Projects/SmallKeeper';
-import { LangProvider, useLang } from 'context/langContext';
-=======
-import Blommy from 'components/Projects/Blommy/Blommy';
-import SmallKeeper from 'components/Projects/SmallKeeper/SmallKeeper';
->>>>>>> 3f6d7ad243e92e215214082b435ce818539eaf8d
+import { LangProvider } from 'context/langContext';
 import { useEffect } from 'react';
 
 const Intro = dynamic(() => import('components/Intro'));
