@@ -89,6 +89,21 @@ const SmallKeeper = () => {
             />
           </div>
         </div>
+        <Link href="https://tb-small-keeper.vercel.app/">
+          <a
+            className="hidden hover:scale-110 transition-all hover:shadow-xl hover: md:block md:w-[350px] md:h-[350px] lg:w-[600px] xl:w-[800px] xl:h-[500px]  relative"
+            rel="noreferrer noopener"
+            target="_blank"
+          >
+            <Image
+              alt="Vista previa del proyecto Small Keeper"
+              className="object-cover rounded-2xl"
+              layout="fill"
+              loading="lazy"
+              src="/small-keeper.webp"
+            />
+          </a>
+        </Link>
       </article>
       <DownArrow href="#twitter-clone" />
     </section>

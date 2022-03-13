@@ -2,9 +2,14 @@ import Head from 'next/head';
 import dynamic from 'next/dynamic';
 import useToggle from 'hooks/useToggle';
 import Image from 'next/image';
+<<<<<<< HEAD
 import Blommy from 'components/Projects/Blommy';
 import SmallKeeper from 'components/Projects/SmallKeeper';
 import { LangProvider, useLang } from 'context/langContext';
+=======
+import Blommy from 'components/Projects/Blommy/Blommy';
+import SmallKeeper from 'components/Projects/SmallKeeper/SmallKeeper';
+>>>>>>> 3f6d7ad243e92e215214082b435ce818539eaf8d
 import { useEffect } from 'react';
 
 const Intro = dynamic(() => import('components/Intro'));
@@ -20,16 +25,30 @@ const Nav = dynamic(() => import('components/Nav/Nav'));
 export default function Home() {
   const { onOpen, onClose, isOpen } = useToggle();
 
+  useEffect(() => {
+    const vh = window.innerHeight;
+
+    document.documentElement.style.setProperty('--maxHeight', vh + 'px');
+  }, []);
+
   return (
     <>
       <Head>
         <title>Portafolio: Tomas Birbe</title>
         <meta
-          content="Mi nombre es Tomas Birbe. Espero mostrarte quien soy y que hago con
-          este portfolio para que puedas conocer a tu proximo compañero de
-          trabajo!"
+          content="Hola! Mi nombre es Tomas y este es mi portfolio en donde podes ver quien soy y que hago!"
           name="description"
         />
+        <meta content="article" property="og:type" />
+        <meta content="Tomas Birbe" property="og:title" />
+        <meta
+          content="Hola! Mi nombre es Tomas y este es mi portfolio en donde podes ver quien soy y que hago!"
+          property="og:description"
+        />
+        <meta content="/portfolio.jpg" property="og:image" />
+        <meta content="https://tomasbirbe.vercel.app" property="og:url" />
+        <meta content="Tomas Birbe's Portfolio" property="og:site_name" />
+
         <meta content="width=device-width, initial-scale=1.0" name="viewport" />
         <meta charSet="UTF-8" />
         <link href="https://www.typescriptlang.org/" rel="preconnect" />
