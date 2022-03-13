@@ -20,7 +20,6 @@ const Nav = dynamic(() => import('components/Nav/Nav'));
 export default function Home() {
   const { onOpen, onClose, isOpen } = useToggle();
 
-
   return (
     <>
       <Head>
@@ -55,7 +54,7 @@ export default function Home() {
             <Blommy />
             <SmallKeeper />
             <TwitterClone />
-            <Calculator />
+            {/* <Calculator /> */}
             <Contact />
             <Drawer isOpen={isOpen} onClose={onClose} />
             <button

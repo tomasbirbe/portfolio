@@ -1,16 +1,14 @@
 {
   "en":{
-    "title": "",
-    "firstParagraph": "",
-    "rol": "",
-    "secondParagraph": "",
-    "thirdParagraph": ""
+    "title": "About me",
+    "firstParagraph": "Hi! My name is Tomas, I'm a Frontend React Developer. In my day by day I use React, HTML, CSS, JavaScript, Git and SQL databases.",
+    "secondParagraph": "Also I enjoy learning and using NodesJS with ExpressJS, NextJS, TypeScript, Tailwind and ChakraUI.",
+    "thirdParagraph": "In a while I'm looking for my first job eager to work in a team and find challenges to put me to test!"
   },
   "es":{
-    "title": "",
-    "firstParagraph": "",
-    "rol": "",
-    "secondParagraph": "",
-    "thirdParagraph": ""
+    "title": "Sobre mi",
+    "firstParagraph": "Hola! Mi nombre es Tomás, soy Desarrollador Frontend React. En mi día a día utilizo React, HTML, CSS, JavaScript, Git y bases de datos SQL.",
+    "secondParagraph": "Tambien disfruto de aprender y utilizar NodesJS ExpressJS, NextJS, TypeScript, Tailwind y ChakraUI.",
+    "thirdParagraph": "Mientras tanto estoy en busca de mi primer laboral ansioso de trabajar en equipo y encontrar desafios para ponerme a prueba!"
   }
 }

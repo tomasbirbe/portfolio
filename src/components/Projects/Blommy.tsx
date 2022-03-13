@@ -1,11 +1,31 @@
+import { useLang } from 'context/langContext';
 import Image from 'next/image';
 import Link from 'next/link';
+import { useState, useEffect } from 'react';
+import { api } from 'services/api';
 
 import { DownArrow } from '../Icons';
 
+interface Data {
+  title: string;
+  about: string;
+}
+
+const INITIAL_DATA: Data = {
+  title: '',
+  about: '',
+};
+
 const Blommy = () => {
+  const [lang] = useLang();
+  const [data, setData] = useState<Data>(INITIAL_DATA);
+
+  useEffect(() => {
+    setData(api.get.blommy(lang));
+  }, [lang]);
+
   return (
-    <section className="page px-8" id="blommy">
+    <section className="page px-8 pb-8" id="blommy">
       <article className="flex flex-row text-center md:gap-12 xl:gap-[8em] items-center justify-between">
         <div className="flex h-full flex-col gap-8 items-center justify-between">
           <h3>
@@ -16,14 +36,11 @@ const Blommy = () => {
                 rel="noreferrer noopener"
                 target="_blank"
               >
-                Blommy
+                {data.title}
               </a>
             </Link>
           </h3>
-          <div className="max-w-[370px] min-w-[250px]">
-            Este proyecto es mi blog personal en donde voy publicando mi aprendizaje, herramientas y
-            recursos. Pude poner en practica NextJS y ChakraUI con todas sus funcionalidades
-          </div>
+          <div className="max-w-[300px] min-w-[250px]">{data.about}</div>
           <div className="flex gap-3 flex-wrap w-[150px]">
             <Image
               alt="Logo de ChakraUI"

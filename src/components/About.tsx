@@ -1,23 +1,38 @@
+import { useLang } from 'context/langContext';
+import { useEffect, useState } from 'react';
+import { api } from 'services/api';
+
 import { DownArrow } from './Icons';
 
+interface Data {
+  title: string;
+  firstParagraph: string;
+  secondParagraph: string;
+  thirdParagraph: string;
+}
+
+const INITIAL_DATA: Data = {
+  title: '',
+  firstParagraph: '',
+  secondParagraph: '',
+  thirdParagraph: '',
+};
+
 export default function About() {
+  const [lang] = useLang();
+  const [data, setData] = useState<Data>(INITIAL_DATA);
+
+  useEffect(() => {
+    setData(api.get.about(lang));
+  }, [lang]);
+
   return (
-    <section className="page gap-10 px-8" id="about-me">
-      <h2>Sobre mi</h2>
+    <section className="page gap-8 px-8 pb-6" id="about-me">
+      <h2>{data.title}</h2>
       <article className="flex flex-col max-w-[500px] text-center items-center gap-8">
-        <span>
-          Hola! Mi nombre es Tomás, soy&nbsp;{' '}
-          <strong className="font-bold">Desarrollador Front-End React</strong>. En mi día a día
-          utilizo React, HTML, CSS, JavaScript, Git y bases de datos SQL.
-        </span>
-        <span>
-          Tambien disfruto de aprender y utilizar NodesJS con ExpressJS, NextJS, TypeScript,
-          Tailwind y ChakraUI.
-        </span>
-        <span>
-          Mientras tanto en busca de mi primer experienca laboral, ansioso de trabajar en equipo y
-          encontrar desafios para ponerme a prueba!
-        </span>
+        <span>{data.firstParagraph}</span>
+        <span>{data.secondParagraph}</span>
+        <span>{data.thirdParagraph}</span>
       </article>
       <DownArrow href="#techs" />
     </section>

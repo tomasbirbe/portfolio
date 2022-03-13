@@ -1,0 +1,26 @@
+{
+  "en":{
+    "intro": "Introduction",
+    "aboutMe": "About me",
+    "technologies": "Technologies",
+    "projects": {
+      "title": "Projects",
+      "blommy": "Blommy",
+      "smallKeeper": "Small Keeper",
+      "twitterClone": "Twitter Clone"
+    },
+    "contact": "Contact"
+  },
+  "es":{
+    "intro": "Introduccion",
+    "aboutMe": "Sobre mi",
+    "technologies": "Tecnologias",
+    "projects": {
+      "title": "Proyectos",
+      "blommy": "Blommy",
+      "smallKeeper": "Small Keeper",
+      "twitterClone": "Twitter Clon"
+    },
+    "contact": "Contacto"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "en":{
+    "title": "Twitter Clone",
+    "about": "This project is a clone of the UI of Twitter and I made it with the objective of practicing my skills of layout with ChakraUI and the implementation of Responsive design."
+  },
+  "es":{
+    "title": "Twitter Clon",
+    "about":"Este proyecto es un clon de la UI de Twitter y lo hice con el objetivo de poner en practica mis habilidades de maquetacion con ChakraUI y la implementacion de un diseño Responsivo."
+  }
+}
