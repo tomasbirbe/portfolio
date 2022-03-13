@@ -90,7 +90,7 @@ const Calculator = () => {
           </a>
         </Link>
       </article>
-      <DownArrow href="#contact" />
+      <DownArrow href="#techs" />
     </section>
   );
 };

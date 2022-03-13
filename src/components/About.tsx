@@ -34,7 +34,7 @@ export default function About() {
         <span>{data.secondParagraph}</span>
         <span>{data.thirdParagraph}</span>
       </article>
-      <DownArrow href="#techs" />
+      <DownArrow href="#projects" />
     </section>
   );
 }

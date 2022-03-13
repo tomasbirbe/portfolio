@@ -63,12 +63,12 @@ export default function Home() {
           <main>
             <Intro />
             <About />
-            <Techs />
             <Projects />
             <Blommy />
             <SmallKeeper />
             <TwitterClone />
             {/* <Calculator /> */}
+            <Techs />
             <Contact />
             <Drawer isOpen={isOpen} onClose={onClose} />
             <button

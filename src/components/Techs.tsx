@@ -104,7 +104,7 @@ const Techs = () => {
           </figure>
         </a>
       </article>
-      <DownArrow href="#projects" />
+      <DownArrow href="#contact" />
     </section>
   );
 };
