@@ -12,7 +12,7 @@ const About = dynamic(() => import('components/About'));
 const Techs = dynamic(() => import('components/Techs'));
 const Projects = dynamic(() => import('components/Projects'));
 const TwitterClone = dynamic(() => import('components/Projects/TwitterClone'));
-const Calculator = dynamic(() => import('components/Projects/Calculator'));
+// const Calculator = dynamic(() => import('components/Projects/Calculator'));
 const Contact = dynamic(() => import('components/Contact'));
 const Drawer = dynamic(() => import('components/Drawer/Drawer'));
 const Nav = dynamic(() => import('components/Nav/Nav'));
